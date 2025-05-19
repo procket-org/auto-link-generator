@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Link Generator - A WordPress plugin that intelligently auto-generates internal links, enhances SEO performance, and optimizes user experience.</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Index CSS -->
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <select class="form-select" id="languageSelect">
+            <option value="en">English</option>
+            <option value="zh_CN">简体中文</option>
+            <option value="zh_TW">繁體中文</option>
+            <option value="ja">日本語</option>
+            <option value="ko">한국어</option>
+            <option value="de">Deutsch</option>
+            <option value="fr">Français</option>
+            <option value="es">Español</option>
+        </select>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center hero-content" data-aos="fade-up">
+                    <h1 class="display-4 mb-4 fw-bold" data-i18n="hero.title">Auto Link Generator</h1>
+                    <p class="lead mb-5" data-i18n="hero.description">Intelligent automatic internal link generation, improving SEO and user experience</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#features" class="btn btn-custom btn-custom-light" data-i18n="hero.button.features">View Features</a>
+                        <a href="https://github.com/procket-org/auto-link-generator" class="btn btn-custom btn-custom-light">
+                            <i class="fab fa-github me-2"></i>GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="features.title">Key Features</h2>
+                <p data-i18n="features.subtitle">Powerful tools to enhance your website's SEO and user experience</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-magic feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="features.automatic.title">Automatic Link Generation</h3>
+                        <p data-i18n="features.automatic.description">Automatically convert keywords to links based on predefined rules, improving content connectivity.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-tags feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="features.tags.title">Tag Integration</h3>
+                        <p data-i18n="features.tags.description">Automatically generate links from article tags, enhancing content relationships.</p>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-cogs feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="features.management.title">Advanced Management</h3>
+                        <p data-i18n="features.management.description">A simple and elegant admin interface for easily managing all post links.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="requirements.title">System Requirements</h2>
+                <p data-i18n="requirements.subtitle">Ensure your system meets these requirements for optimal performance</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fab fa-wordpress feature-icon"></i>
+                        </div>
+                        <h3 class="h5" data-i18n="requirements.wordpress">WordPress 5.0+</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fab fa-php feature-icon"></i>
+                        </div>
+                        <h3 class="h5" data-i18n="requirements.php">PHP 7.0+</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-database feature-icon"></i>
+                        </div>
+                        <h3 class="h5" data-i18n="requirements.mysql">MySQL 5.6+</h3>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-globe feature-icon"></i>
+                        </div>
+                        <h3 class="h5" data-i18n="requirements.browsers">Modern Browsers</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Guide -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="guide.title">Usage Guide</h2>
+                <p data-i18n="guide.subtitle">Follow these simple steps to get started</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-download feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-4" data-i18n="guide.installation.title">Installation</h3>
+                        <ul>
+                            <li class="mb-2" data-i18n="guide.installation.step1">Download from WordPress plugin repository</li>
+                            <li class="mb-2" data-i18n="guide.installation.step2">Upload to your plugins directory</li>
+                            <li class="mb-2" data-i18n="guide.installation.step3">Activate through WordPress admin</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-cog feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-4" data-i18n="guide.configuration.title">Configuration</h3>
+                        <ul>
+                            <li class="mb-2" data-i18n="guide.configuration.step1">Go to Settings > Auto Link in WordPress admin</li>
+                            <li class="mb-2" data-i18n="guide.configuration.step2">Configure global settings like case sensitivity and max links</li>
+                            <li class="mb-2" data-i18n="guide.configuration.step3">Add keywords and corresponding URLs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-check-circle feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-4" data-i18n="guide.usage.title">Usage</h3>
+                        <ul>
+                            <li class="mb-2" data-i18n="guide.usage.step1">Post tags will be automatically converted into links</li>
+                            <li class="mb-2" data-i18n="guide.usage.step2">View custom keywords in admin panel</li>
+                            <li class="mb-2" data-i18n="guide.usage.step3">Adjust settings as needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="testimonials.title">Testimonials</h2>
+                <p data-i18n="testimonials.subtitle">Real feedback from users around the world</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card h-100">
+                        <p class="mb-4" data-i18n="testimonials.review1">"This is the best auto-linking plugin I've ever used. It saves so much time! Significant SEO improvements."</p>
+                        <div class="client-info">
+                            <img src="assets/images/user-avatar-1.jpg" alt="Sarah Johnson" class="client-avatar">
+                            <div>
+                                <h5 class="mb-0" data-i18n="testimonials.client1">Sarah Johnson</h5>
+                                <small class="text-muted" data-i18n="testimonials.position1">Tech Blogger</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card h-100">
+                        <p class="mb-4" data-i18n="testimonials.review2">"Intuitive interface, powerful functionality, completely meets my needs. After one month of use, my site traffic increased by 20%."</p>
+                        <div class="client-info">
+                            <img src="assets/images/user-avatar-2.jpg" alt="David Chen" class="client-avatar">
+                            <div>
+                                <h5 class="mb-0" data-i18n="testimonials.client2">David Chen</h5>
+                                <small class="text-muted" data-i18n="testimonials.position2">SEO Specialist</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card h-100">
+                        <p class="mb-4" data-i18n="testimonials.review3">"Customer support is responsive and professional. Every issue I encountered was promptly resolved."</p>
+                        <div class="client-info">
+                            <img src="assets/images/user-avatar-3.jpg" alt="Maria Garcia" class="client-avatar">
+                            <div>
+                                <h5 class="mb-0" data-i18n="testimonials.client3">Maria Garcia</h5>
+                                <small class="text-muted" data-i18n="testimonials.position3">Content Manager</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="faq.title">FAQ</h2>
+                <p data-i18n="faq.subtitle">Answers to common questions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="faq-item" data-aos="fade-up">
+                            <h3 data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false">
+                                <span data-i18n="faq.q1">Why aren't some keywords automatically linked?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div id="faq1" class="collapse" data-bs-parent="#faqAccordion">
+                                <p class="answer" data-i18n="faq.a1">Please check whether the maximum number of links has been exceeded and whether the case sensitivity settings are met. In some cases, keywords inside HTML tags or within existing links will not be replaced.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                            <h3 data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false">
+                                <span data-i18n="faq.q2">How to disable linking in specific articles?</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </h3>
+                            <div id="faq2" class="collapse" data-bs-parent="#faqAccordion">
+                                <p class="answer" data-i18n="faq.a2">Simply add the excluded posts in the Auto Link settings in the admin panel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Changelog -->
+    <section class="changelog-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="changelog.title">Changelog</h2>
+                <p data-i18n="changelog.subtitle">Continuous improvements for better experience</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="changelog-item" data-aos="fade-up">
+                        <h3>v2.0.0 (2025-05)</h3>
+                        <ul>
+                            <li data-i18n="changelog.v2.feature1">Added creation time display for better keyword management</li>
+                            <li data-i18n="changelog.v2.feature2">Optimized UI/UX for better operational experience</li>
+                            <li data-i18n="changelog.v2.feature3">Added multi-language support (8 languages) to meet international user needs</li>
+                        </ul>
+                    </div>
+                    <div class="changelog-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3>v1.0.0 (2025-03)</h3>
+                        <ul>
+                            <li data-i18n="changelog.v1.feature1">Initial release with basic functionality</li>
+                            <li data-i18n="changelog.v1.feature2">Basic auto-linking with keyword matching</li>
+                            <li data-i18n="changelog.v1.feature3">Admin interface for keyword and link management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support -->
+    <section class="support-section">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2 data-i18n="support.title">Support</h2>
+                <p data-i18n="support.subtitle">We're here to help</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="support-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-book feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="support.documentation.title">Documentation</h3>
+                        <p class="mb-4" data-i18n="support.documentation.description">Detailed guides and tutorials to help you make the most of the plugin</p>
+                        <a href="https://github.com/procket-org/auto-link-generator" class="btn btn-primary" data-i18n="support.documentation.button">View Docs</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="support-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fab fa-github feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="support.forum.title">Github</h3>
+                        <p class="mb-4" data-i18n="support.forum.description">Feel free to ask me questions and tell me what you need right here</p>
+                        <a href="https://github.com/procket-org/auto-link-generator" class="btn btn-primary" data-i18n="support.forum.button">Visit Forum</a>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="support-card h-100">
+                        <div class="feature-icon-wrapper">
+                            <i class="fas fa-envelope feature-icon"></i>
+                        </div>
+                        <h3 class="h5 mb-3" data-i18n="support.contact.title">Contact</h3>
+                        <p class="mb-4" data-i18n="support.contact.description">Professional support team ready to answer your questions</p>
+                        <a href="#" class="btn btn-primary" data-i18n="support.contact.button">Send Email</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4 data-i18n="footer.about.title">About Auto Link Generator</h4>
+                    <p data-i18n="footer.about.description">A powerful WordPress plugin for automatic internal linking, dedicated to improving website SEO performance and user experience</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 data-i18n="footer.links.title">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#features" data-i18n="footer.links.features">Features</a></li>
+                        <li><a href="https://github.com/procket-org/auto-link-generator" data-i18n="footer.links.docs">Documentation</a></li>
+                        <li><a href="https://github.com/procket-org/auto-link-generator" data-i18n="footer.links.support">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 data-i18n="footer.social.title">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/procket-org/auto-link-generator" class="me-3"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p data-i18n="footer.copyright">© 2024 Auto Link Generator. All rights reserved.</p>
+                <p data-i18n="footer.license">Released under GPLv2 license. Full text in LICENSE file.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- i18next -->
+    <script src="https://cdn.jsdelivr.net/npm/i18next@21.6.10/dist/umd/i18next.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Index JS -->
+    <script src="assets/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                once: true
+            });
+
+            // Add event listener to language selector
+            document.getElementById('languageSelect').addEventListener('change', function() {
+                changeLanguage(this.value);
+            });
+        });
+    </script>
+</body>
+</html> 
