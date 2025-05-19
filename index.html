@@ -327,7 +327,7 @@
                         </div>
                         <h3 class="h5 mb-3" data-i18n="support.contact.title">Contact</h3>
                         <p class="mb-4" data-i18n="support.contact.description">Professional support team ready to answer your questions</p>
-                        <a href="#" class="btn btn-primary" data-i18n="support.contact.button">Send Email</a>
+                        <a href="#" id="sendEmailBtn" class="btn btn-primary" data-i18n="support.contact.button">Send Email</a>
                     </div>
                 </div>
             </div>
@@ -375,18 +375,5 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Index JS -->
     <script src="assets/js/index.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                once: true
-            });
-
-            // Add event listener to language selector
-            document.getElementById('languageSelect').addEventListener('change', function() {
-                changeLanguage(this.value);
-            });
-        });
-    </script>
 </body>
 </html> 

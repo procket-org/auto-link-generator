@@ -1054,7 +1054,19 @@ function changeLanguage(lng) {
     i18next.changeLanguage(lng).then(updateContent);
 }
 
-// Language switching handler (for direct use with event listener)
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+});
+
 document.getElementById('languageSelect').addEventListener('change', function (e) {
     changeLanguage(e.target.value);
+});
+
+document.getElementById('sendEmailBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+    const email = atob("dG9ueWxldmlkQGdtYWlsLmNvbQ==");
+    window.location.href = "mailto:" + email;
 });
