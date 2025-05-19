@@ -24,7 +24,7 @@ const resources = {
                 },
                 tags: {
                     title: "Tag Integration",
-                    description: "Automatically generate links from article tags, enhancing content relationships."
+                    description: "Automatically generate links from post tags, enhancing content relationships."
                 },
                 management: {
                     title: "Advanced Management",
@@ -79,7 +79,7 @@ const resources = {
                 subtitle: "Answers to common questions",
                 q1: "Why aren't some keywords automatically linked?",
                 a1: "Please check whether the maximum number of links has been exceeded and whether the case sensitivity settings are met. In some cases, keywords inside HTML tags or within existing links will not be replaced.",
-                q2: "How to disable linking in specific articles?",
+                q2: "How to disable linking in specific posts?",
                 a2: "Simply add the excluded posts in the Auto Link settings in the admin panel."
             },
             changelog: {
