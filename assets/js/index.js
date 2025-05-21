@@ -1321,12 +1321,36 @@ const resources = {
 };
 
 // Initialize i18next
+// Determine initial language
+let initialLng = 'en';
+const userLang = navigator.language || navigator.userLanguage;
+
+if (userLang) {
+    const langLower = userLang.toLowerCase();
+    const langMainPart = langLower.split('-')[0];
+    if (langLower === 'zh-cn' && resources.zh_CN) {
+        initialLng = 'zh_CN';
+    } else if (langLower === 'zh-tw' && resources.zh_TW) {
+        initialLng = 'zh_TW';
+    } else if (langMainPart === 'zh' && resources.zh_CN) {
+        initialLng = 'zh_CN';
+    } else if (resources[langMainPart]) {
+        initialLng = langMainPart;
+    }
+}
+
 i18next.init({
     resources: resources,
-    lng: 'en', // Default to English
-    fallbackLng: 'en'
+    lng: initialLng,
+    fallbackLng: 'en',
+    supportedLngs: Object.keys(resources) // Explicitly list supported languages
 }).then(function (t) {
     updateContent();
+    // Set the language selector to the current language
+    const languageSelect = document.getElementById('languageSelect');
+    if (languageSelect) {
+        languageSelect.value = i18next.language;
+    }
 });
 
 // Update page content
