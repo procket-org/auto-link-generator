@@ -15,6 +15,22 @@ const resources = {
                     features: "View Features"
                 }
             },
+            why: {
+                title: "Why Choose Us",
+                subtitle: "A good plugin should be simple, elegant, and work quietly",
+                simple: {
+                    title: "Simple",
+                    description: "No complex configuration needed, install and use, with an intuitive settings interface for easy operation."
+                },
+                elegant: {
+                    title: "Elegant",
+                    description: "Carefully designed code structure, efficient and clean, doesn't add unnecessary burden to your website."
+                },
+                quiet: {
+                    title: "Quiet",
+                    description: "Works silently in the background without disturbing your creative process, automatically adding valuable links to your content."
+                }
+            },
             features: {
                 title: "Key Features",
                 subtitle: "Powerful tools to enhance your website's SEO and user experience",
@@ -80,7 +96,9 @@ const resources = {
                 q1: "Why aren't some keywords automatically linked?",
                 a1: "Please check whether the maximum number of links has been exceeded and whether the case sensitivity settings are met. In some cases, keywords inside HTML tags or within existing links will not be replaced.",
                 q2: "How to disable linking in specific posts?",
-                a2: "Simply add the excluded posts in the Auto Link settings in the admin panel."
+                a2: "Simply add the excluded posts in the Auto Link settings in the admin panel.",
+                q3: "Are the automatic links hardcoded on the posts?",
+                a3: "The post content stored in the WordPress database is never modified by this plugin. The plugin only adds links to the post content when it is displayed on the frontend."
             },
             changelog: {
                 title: "Changelog",
@@ -131,6 +149,24 @@ const resources = {
                 },
                 copyright: "© 2024 Auto Link Generator. All rights reserved.",
                 license: "Released under GPLv2 license. Full text in LICENSE file."
+            },
+            screenshots: {
+                slide1: {
+                    title: "Admin Dashboard",
+                    description: "The main control panel for managing your auto links"
+                },
+                slide2: {
+                    title: "Exclude Posts",
+                    description: "Exclude posts from auto-linking"
+                },
+                slide3: {
+                    title: "Keywords Management",
+                    description: "Add, edit, and manage your keywords and their target URLs"
+                },
+                slide4: {
+                    title: "Frontend Appearance",
+                    description: "The appearance of the auto-linked content on the frontend"
+                }
             }
         }
     },
@@ -141,6 +177,22 @@ const resources = {
                 description: "智能自动生成内部链接，提升SEO效果，优化用户体验",
                 button: {
                     features: "了解功能"
+                }
+            },
+            why: {
+                title: "为什么选择我",
+                subtitle: "一个好的插件应该简单、优雅、安静地工作",
+                simple: {
+                    title: "简单",
+                    description: "无需复杂配置，安装即用，直观的设置界面让您轻松上手。"
+                },
+                elegant: {
+                    title: "优雅",
+                    description: "精心设计的代码结构，高效且整洁，不会给您的网站增加不必要的负担。"
+                },
+                quiet: {
+                    title: "安静",
+                    description: "在后台默默工作，不打扰您的创作流程，为内容自动添加有价值的链接。"
                 }
             },
             features: {
@@ -206,9 +258,11 @@ const resources = {
                 title: "常见问题",
                 subtitle: "解答您最关心的问题",
                 q1: "为什么某些关键词没有自动链接？",
-                a1: "请检查是否超过了最大链接数限制，以及是否符合大小写设置。某些情况下，如果关键词出现在HTML标签内或已有链接中，也不会被替换。",
-                q2: "如何在特定文章中禁用自动链接？",
-                a2: "只需在自动链接设置中的管理面板中添加排除的文章即可。"
+                a1: "请检查是否超过了最大链接数限制，以及是否符合大小写设置。某些情况下，关键词出现在HTML标签内或已有链接中，也不会被替换。",
+                q2: "如何禁用特定文章中的自动链接？",
+                a2: "只需在自动链接设置中的管理面板中添加排除的文章即可。",
+                q3: "自动链接是否硬编码在文章中？",
+                a3: "文章内容存储在WordPress数据库中，不会被此插件修改。插件仅在前端显示时将链接添加到文章内容中。"
             },
             changelog: {
                 title: "更新日志",
@@ -259,6 +313,24 @@ const resources = {
                 },
                 copyright: "© 2024 自动链接生成器。保留所有权利。",
                 license: "本插件基于GPLv2许可证发布。完整许可证文本可在LICENSE文件中找到。"
+            },
+            screenshots: {
+                slide1: {
+                    title: "管理仪表盘",
+                    description: "管理自动链接的主控制面板"
+                },
+                slide2: {
+                    title: "排除文章",
+                    description: "从自动链接中排除特定文章"
+                },
+                slide3: {
+                    title: "关键词管理",
+                    description: "添加、编辑和管理您的关键词及其目标URL"
+                },
+                slide4: {
+                    title: "前端显示效果",
+                    description: "自动链接内容在前端的显示效果"
+                }
             }
         }
     },
@@ -269,6 +341,22 @@ const resources = {
                 description: "智能自動生成內部鏈接，提升SEO效果，優化用戶體驗",
                 button: {
                     features: "了解功能"
+                }
+            },
+            why: {
+                title: "為什麼選擇我",
+                subtitle: "一個好的插件應該簡單、優雅、安靜地工作",
+                simple: {
+                    title: "簡單",
+                    description: "無需複雜配置，安裝即用，直觀的設置界面讓您輕鬆上手。"
+                },
+                elegant: {
+                    title: "優雅",
+                    description: "精心設計的代碼結構，高效且整潔，不會給您的網站增加不必要的負擔。"
+                },
+                quiet: {
+                    title: "安靜",
+                    description: "在後台默默工作，不打擾您的創作流程，為內容自動添加有價值的鏈接。"
                 }
             },
             features: {
@@ -336,7 +424,9 @@ const resources = {
                 q1: "為什麼某些關鍵詞沒有自動鏈接？",
                 a1: "請檢查是否超過了最大鏈接數限制，以及是否符合大小寫設置。某些情況下，如果關鍵詞出現在HTML標籤內或已有鏈接中，也不會被替換。",
                 q2: "如何在特定文章中禁用自動鏈接？",
-                a2: "只需在自動鏈接設置中的管理面板中添加排除的文章即可。"
+                a2: "只需在自動鏈接設置中的管理面板中添加排除的文章即可。",
+                q3: "自動鏈接是否硬編碼在文章中？",
+                a3: "文章內容存儲在WordPress數據庫中，不會被此插件修改。插件僅在前端顯示時將鏈接添加到文章內容中。"
             },
             changelog: {
                 title: "更新日誌",
@@ -387,6 +477,24 @@ const resources = {
                 },
                 copyright: "© 2024 自動鏈接生成器。全權利所有。",
                 license: "本插件基於GPLv2許可證發布。完整許可證文本可在LICENSE文件中找到。"
+            },
+            screenshots: {
+                slide1: {
+                    title: "管理儀表板",
+                    description: "管理自動鏈接的主控制面板"
+                },
+                slide2: {
+                    title: "排除文章",
+                    description: "從自動鏈接中排除特定文章"
+                },
+                slide3: {
+                    title: "關鍵詞管理",
+                    description: "添加、編輯和管理您的關鍵詞及其目標URL"
+                },
+                slide4: {
+                    title: "前端顯示效果",
+                    description: "自動鏈接內容在前端的顯示效果"
+                }
             }
         }
     },
@@ -397,6 +505,22 @@ const resources = {
                 description: "インテリジェントな内部リンク自動生成で、SEO ペフォーマンス とユーザー体験を向上",
                 button: {
                     features: "機能を見る"
+                }
+            },
+            why: {
+                title: "なぜ選ぶべきか",
+                subtitle: "優れたプラグインはシンプルで優雅に、静かに動作するべきです",
+                simple: {
+                    title: "シンプル",
+                    description: "複雑な設定不要、インストールしてすぐに使えます。直感的な設定インターフェースで簡単に操作できます。"
+                },
+                elegant: {
+                    title: "優雅",
+                    description: "慎重に設計されたコード構造で、効率的かつクリーンで、ウェブサイトに不要な負担をかけません。"
+                },
+                quiet: {
+                    title: "静か",
+                    description: "バックグラウンドで静かに動作し、創作プロセスを邪魔せず、コンテンツに価値あるリンクを自動的に追加します。"
                 }
             },
             features: {
@@ -464,7 +588,9 @@ const resources = {
                 q1: "なぜ一部のキーワードが自動的にリンクされないのですか？",
                 a1: "最大リンク数を超えていないか、大文字小文字の設定が満たされているかを確認してください。場合によっては、HTMLタグ内や既存のリンク内のキーワードは置き換えられません。",
                 q2: "特定の記事でリンク生成を無効にするにはどうすればよいですか？",
-                a2: "管理パネルの自動リンク設定で、除外する投稿を追加するだけです。"
+                a2: "管理パネルの自動リンク設定で、除外する投稿を追加するだけです。",
+                q3: "自動リンクは記事に硬編集されていますか？",
+                a3: "記事の内容はWordPressデータベースに保存され、このプラグインによって変更されません。プラグインは、記事が表示される前端でのみリンクを追加します。"
             },
             changelog: {
                 title: "変更履歴",
@@ -515,6 +641,24 @@ const resources = {
                 },
                 copyright: "© 2024 自動リンク生成ツール。全著作権所有。",
                 license: "GPLv2ライセンスの下でリリースされています。完全なテキストはLICENSEファイルにあります。"
+            },
+            screenshots: {
+                slide1: {
+                    title: "管理ダッシュボード",
+                    description: "自動リンクを管理するためのメインコントロールパネル"
+                },
+                slide2: {
+                    title: "投稿の除外",
+                    description: "特定の投稿を自動リンクから除外する"
+                },
+                slide3: {
+                    title: "キーワード管理",
+                    description: "キーワードとそのターゲットURLの追加、編集、管理"
+                },
+                slide4: {
+                    title: "フロントエンド表示",
+                    description: "フロントエンドでの自動リンクコンテンツの表示"
+                }
             }
         }
     },
@@ -525,6 +669,22 @@ const resources = {
                 description: "지능형 자동 내부 링크 생성으로 SEO 및 사용자 경험 향상",
                 button: {
                     features: "기능 보기"
+                }
+            },
+            why: {
+                title: "왜 선택해야 하는가",
+                subtitle: "좋은 플러그인은 간단하고 우아하며 조용히 작동해야 합니다",
+                simple: {
+                    title: "단순함",
+                    description: "복잡한 설정이 필요 없으며, 설치하고 바로 사용할 수 있습니다. 직관적인 설정 인터페이스로 쉽게 조작할 수 있습니다."
+                },
+                elegant: {
+                    title: "우아함",
+                    description: "신중하게 설계된 코드 구조로, 효율적이고 깔끔하며, 웹사이트에 불필요한 부담을 주지 않습니다."
+                },
+                quiet: {
+                    title: "조용함",
+                    description: "백그라운드에서 조용히 작동하여 창작 과정을 방해하지 않고, 콘텐츠에 가치 있는 링크를 자동으로 추가합니다."
                 }
             },
             features: {
@@ -592,7 +752,9 @@ const resources = {
                 q1: "일부 키워드가 자동으로 링크되지 않는 이유는 무엇인가요?",
                 a1: "최대 링크 수를 초과했는지, 대소문자 설정이 충족되는지 확인하세요. 키워드가 HTML 태그 내부나 기존 링크 내에 있는 경우 대체되지 않습니다.",
                 q2: "특정 게시물에서 링크 생성을 비활성화하려면 어떻게 해야 하나요?",
-                a2: "관리 패널의 자동 링크 설정에서 제외할 게시물을 추가하기만 하면 됩니다."
+                a2: "관리 패널의 자동 링크 설정에서 제외할 게시물을 추가하기만 하면 됩니다.",
+                q3: "자동 링크는 게시물에 하드 코딩되어 있나요?",
+                a3: "게시물 내용은 WordPress 데이터베이스에 저장되며, 이 플러그인에 의해 수정되지 않습니다. 플러그인은 게시물이 표시될 때만 링크를 추가합니다."
             },
             changelog: {
                 title: "변경 내역",
@@ -643,6 +805,24 @@ const resources = {
                 },
                 copyright: "© 2024 자동 링크 생성기. 모든 권리 보유.",
                 license: "GPLv2 라이센스 하에 출시되었습니다. 전체 텍스트는 LICENSE 파일에 있습니다."
+            },
+            screenshots: {
+                slide1: {
+                    title: "관리 대시보드",
+                    description: "자동 링크를 관리하기 위한 메인 제어판"
+                },
+                slide2: {
+                    title: "게시물 제외",
+                    description: "특정 게시물을 자동 링크에서 제외"
+                },
+                slide3: {
+                    title: "키워드 관리",
+                    description: "키워드 및 대상 URL 추가, 편집 및 관리"
+                },
+                slide4: {
+                    title: "프론트엔드 모양",
+                    description: "프론트엔드에서 자동 링크 컨텐츠의 모양"
+                }
             }
         }
     },
@@ -653,6 +833,22 @@ const resources = {
                 description: "Intelligente automatische interne Linkerzeugung zur Verbesserung von SEO und Benutzererfahrung",
                 button: {
                     features: "Funktionen anzeigen"
+                }
+            },
+            why: {
+                title: "Warum sollten Sie uns wählen?",
+                subtitle: "Eine gute Plugin sollte einfach, elegant und still arbeiten",
+                simple: {
+                    title: "Einfach",
+                    description: "Keine komplexen Einstellungen erforderlich, installieren und verwenden, mit einer intuitiven Einstellungsoberfläche für einfache Bedienung."
+                },
+                elegant: {
+                    title: "Elegant",
+                    description: "Vorsichtig entworfener Code, effizient und sauber, ohne zusätzliche Belastung für Ihre Website."
+                },
+                quiet: {
+                    title: "Stille",
+                    description: "Arbeitet still im Hintergrund ohne Ihren kreativen Prozess zu stören und wertvolle Links automatisch zu Ihrem Inhalt hinzuzufügen."
                 }
             },
             features: {
@@ -710,9 +906,9 @@ const resources = {
                 review2: "Intuitive Benutzeroberfläche, leistungsstarke Funktionalität, erfüllt meine Bedürfnisse vollständig. Nach einem Monat Nutzung ist mein Website-Traffic um 20% gestiegen.",
                 client2: "David Chen",
                 position2: "SEO-Spezialist",
-                review3: "Der Kundensupport ist reaktionsschnell und professionell. Jedes Problem, auf das ich gestoßen bin, wurde umgehend gelöst.",
+                review3: "Der Kundensupport ist reaktionsschnell und professionell. Chaque problème que j'ai rencontré a été rapidement résolu.",
                 client3: "Maria Garcia",
-                position3: "Content-Managerin"
+                position3: "Gestionnaire de Contenu"
             },
             faq: {
                 title: "FAQ",
@@ -720,7 +916,9 @@ const resources = {
                 q1: "Warum werden einige Schlüsselwörter nicht automatisch verlinkt?",
                 a1: "Bitte prüfen Sie, ob die maximale Anzahl der Links überschritten wurde und ob die Einstellungen für Groß-/Kleinschreibung erfüllt sind. In einigen Fällen werden Schlüsselwörter innerhalb von HTML-Tags oder in vorhandenen Links nicht ersetzt.",
                 q2: "Wie deaktiviere ich die Verlinkung in bestimmten Artikeln?",
-                a2: "Fügen Sie einfach die ausgeschlossenen Beiträge in den Auto Link-Einstellungen im Admin-Panel hinzu."
+                a2: "Fügen Sie einfach die ausgeschlossenen Beiträge in den Auto Link-Einstellungen im Admin-Panel hinzu.",
+                q3: "Sont les liens automatiques codés en dur dans les articles?",
+                a3: "Le contenu des articles stocké dans la base de données WordPress n'est jamais modifié par ce plugin. Le plugin n'ajoute que des liens au contenu des articles lorsqu'ils sont affichés sur la page de front-end."
             },
             changelog: {
                 title: "Änderungsprotokoll",
@@ -771,6 +969,24 @@ const resources = {
                 },
                 copyright: "© 2024 Auto Link Generator. Alle Rechte vorbehalten.",
                 license: "Veröffentlicht unter GPLv2-Lizenz. Vollständiger Text in der LICENSE-Datei."
+            },
+            screenshots: {
+                slide1: {
+                    title: "Tableau de Bord Admin",
+                    description: "Das Hauptkontrollpanel zur Verwaltung Ihrer Auto-Links"
+                },
+                slide2: {
+                    title: "Beiträge ausschließen",
+                    description: "Beiträge von der automatischen Verlinkung ausschließen"
+                },
+                slide3: {
+                    title: "Schlüsselwortverwaltung",
+                    description: "Hinzufügen, Bearbeiten und Verwalten Ihrer Schlüsselwörter und deren Ziel-URLs"
+                },
+                slide4: {
+                    title: "Frontend-Darstellung",
+                    description: "Die Darstellung der automatisch verlinkten Inhalte im Frontend"
+                }
             }
         }
     },
@@ -781,6 +997,22 @@ const resources = {
                 description: "Génération intelligente de liens internes automatiques, améliorant le SEO et l'expérience utilisateur",
                 button: {
                     features: "Voir les Fonctionnalités"
+                }
+            },
+            why: {
+                title: "Pourquoi devriez-vous nous choisir ?",
+                subtitle: "Un bon plugin devrait être simple, élégant et fonctionner en douceur",
+                simple: {
+                    title: "Simple",
+                    description: "Pas de configuration complexe nécessaire, installez et utilisez, avec une interface d'établissement intuitif pour une utilisation facile."
+                },
+                elegant: {
+                    title: "Elegant",
+                    description: "Code de conception soigneuse, efficace et propre, sans ajouter de charge inutile à votre site web."
+                },
+                quiet: {
+                    title: "Silencieux",
+                    description: "Travaille en arrière-plan sans perturber votre processus créatif et ajoute automatiquement des liens utiles à votre contenu."
                 }
             },
             features: {
@@ -848,7 +1080,9 @@ const resources = {
                 q1: "Pourquoi certains mots-clés ne sont pas automatiquement liés ?",
                 a1: "Veuillez vérifier si le nombre maximal de liens a été dépassé et si les paramètres de sensibilité à la casse sont respectés. Dans certains cas, les mots-clés à l'intérieur des balises HTML ou dans des liens existants ne seront pas remplacés.",
                 q2: "Comment désactiver la liaison dans des articles spécifiques ?",
-                a2: "Ajoutez simplement les articles exclus dans les paramètres d'Auto Link du panneau d'administration."
+                a2: "Ajoutez simplement les articles exclus dans les paramètres d'Auto Link du panneau d'administration.",
+                q3: "Sont les liens automatiques codés en dur dans les articles ?",
+                a3: "Le contenu des articles stocké dans la base de données WordPress n'est jamais modifié par ce plugin. Le plugin n'ajoute que des liens au contenu des articles lorsqu'ils sont affichés sur la page de front-end."
             },
             changelog: {
                 title: "Journal des Modifications",
@@ -891,7 +1125,7 @@ const resources = {
                 links: {
                     title: "Liens Rapides",
                     features: "Fonctionnalités",
-                    docs: "Documentation",
+                    docs: "Dokumentation",
                     support: "Support"
                 },
                 social: {
@@ -899,6 +1133,24 @@ const resources = {
                 },
                 copyright: "© 2024 Générateur de Liens Automatique. Tous droits réservés.",
                 license: "Publié sous licence GPLv2. Texte complet dans le fichier LICENSE."
+            },
+            screenshots: {
+                slide1: {
+                    title: "Tableau de Bord Admin",
+                    description: "Le panneau de contrôle principal pour gérer vos liens automatiques"
+                },
+                slide2: {
+                    title: "Exclure des Articles",
+                    description: "Exclure des articles du lien automatique"
+                },
+                slide3: {
+                    title: "Gestion des Mots-clés",
+                    description: "Ajouter, éditer et gérer vos mots-clés et leurs URLs cibles"
+                },
+                slide4: {
+                    title: "Apparence Frontend",
+                    description: "L'apparence du contenu auto-lié sur le frontend"
+                }
             }
         }
     },
@@ -909,6 +1161,22 @@ const resources = {
                 description: "Generación inteligente de enlaces internos automáticos, mejorando SEO y experiencia de usuario",
                 button: {
                     features: "Ver Características"
+                }
+            },
+            why: {
+                title: "¿Por qué debería elegirme?",
+                subtitle: "Un buen plugin debería ser simple, elegante y funcionar en silencio",
+                simple: {
+                    title: "Simple",
+                    description: "No se necesitan configuraciones complejas, instálelo y úselo, con una interfaz intuitiva para una fácil operación."
+                },
+                elegant: {
+                    title: "Elegant",
+                    description: "Código de diseño cuidadoso, eficiente y limpio, sin agregar carga innecesaria a su sitio web."
+                },
+                quiet: {
+                    title: "Silencioso",
+                    description: "Trabaja en segundo plano sin interrumpir su proceso creativo y agregar automáticamente enlaces útiles a su contenido."
                 }
             },
             features: {
@@ -976,7 +1244,9 @@ const resources = {
                 q1: "¿Por qué algunas palabras clave no se enlazan automáticamente?",
                 a1: "Verifique si se ha excedido el número máximo de enlaces y si se cumplen las configuraciones de sensibilidad a mayúsculas. En algunos casos, las palabras clave dentro de etiquetas HTML o enlaces existentes no se reemplazarán.",
                 q2: "¿Cómo deshabilitar el enlazado en artículos específicos?",
-                a2: "Simplemente agregue los artículos excluidos en la configuración de Auto Link en el panel de administración."
+                a2: "Simplemente agregue los artículos excluidos en la configuración de Auto Link en el panel de administración.",
+                q3: "¿Son los enlaces automáticos codificados en duran los artículos?",
+                a3: "El contenido de los artículos almacenado en la base de datos de WordPress no se modifica por este plugin. El plugin solo agrega enlaces al contenido de los artículos cuando se muestra en la página de front-end."
             },
             changelog: {
                 title: "Registro de Cambios",
@@ -1027,6 +1297,24 @@ const resources = {
                 },
                 copyright: "© 2024 Generador de Enlaces Automático. Todos los derechos reservados.",
                 license: "Publicado bajo licencia GPLv2. Texto completo en archivo LICENSE."
+            },
+            screenshots: {
+                slide1: {
+                    title: "Panel de Administración",
+                    description: "El panel de control principal para gestionar sus enlaces automáticos"
+                },
+                slide2: {
+                    title: "Excluir Artículos",
+                    description: "Excluir artículos de la vinculación automática"
+                },
+                slide3: {
+                    title: "Gestión de Palabras Clave",
+                    description: "Añadir, editar y gestionar sus palabras clave y sus URLs de destino"
+                },
+                slide4: {
+                    title: "Apariencia Frontend",
+                    description: "La apariencia del contenido auto-vinculado en el frontend"
+                }
             }
         }
     }
@@ -1070,3 +1358,132 @@ document.getElementById('sendEmailBtn').addEventListener('click', function (e) {
     const email = atob("dG9ueWxldmlkQGdtYWlsLmNvbQ==");
     window.location.href = "mailto:" + email;
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.getElementById('screenshotsCarousel');
+    const sectionTitle = document.querySelector('.screenshots-section .section-title h2');
+    const sectionSubtitle = document.querySelector('.screenshots-section .section-title p');
+
+    const slideData = {
+        0: {
+            titleKey: "screenshots.slide1.title",
+            defaultTitle: "Admin Dashboard",
+            descriptionKey: "screenshots.slide1.description",
+            defaultDescription: "The main control panel for managing your auto links"
+        },
+        1: {
+            titleKey: "screenshots.slide2.title",
+            defaultTitle: "Exclude Posts",
+            descriptionKey: "screenshots.slide2.description",
+            defaultDescription: "Exclude posts from auto-linking"
+        },
+        2: {
+            titleKey: "screenshots.slide3.title",
+            defaultTitle: "Keywords Management",
+            descriptionKey: "screenshots.slide3.description",
+            defaultDescription: "Add, edit, and manage your keywords and their target URLs"
+        },
+        3: {
+            titleKey: "screenshots.slide4.title",
+            defaultTitle: "Frontend Appearance",
+            descriptionKey: "screenshots.slide4.description",
+            defaultDescription: "The appearance of the auto-linked content on the frontend"
+        }
+    };
+
+    function updateSectionTitle(slideIndex) {
+        const currentSlideData = slideData[slideIndex];
+        if (currentSlideData) {
+            // Update title
+            sectionTitle.textContent = typeof i18next !== 'undefined' && i18next.exists(currentSlideData.titleKey) ? i18next.t(currentSlideData.titleKey) : currentSlideData.defaultTitle;
+            sectionTitle.setAttribute('data-i18n', currentSlideData.titleKey);
+            // Update subtitle
+            sectionSubtitle.textContent = typeof i18next !== 'undefined' && i18next.exists(currentSlideData.descriptionKey) ? i18next.t(currentSlideData.descriptionKey) : currentSlideData.defaultDescription;
+            sectionSubtitle.setAttribute('data-i18n', currentSlideData.descriptionKey);
+        }
+    }
+
+    // Initial update for the first slide
+    updateSectionTitle(0);
+
+    if (carousel) {
+        carousel.addEventListener('slid.bs.carousel', function (event) {
+            updateSectionTitle(event.to);
+        });
+    }
+
+    // Update titles if language changes
+    if (typeof i18next !== 'undefined') {
+        i18next.on('languageChanged', () => {
+            if (carousel) {
+                const activeSlideIndex = Array.from(carousel.querySelectorAll('.carousel-item')).findIndex(item => item.classList.contains('active'));
+                updateSectionTitle(activeSlideIndex);
+            }
+        });
+    }
+
+    const lightbox = document.getElementById('imageLightbox');
+    const lightboxImg = document.getElementById('lightboxImage');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+    let currentImageIndex = 0;
+    let carouselImages = [];
+
+    if (carousel) {
+        carouselImages = Array.from(document.querySelectorAll('#screenshotsCarousel .carousel-item img'));
+        carouselImages.forEach((img, index) => {
+            img.addEventListener('click', function() {
+                openLightbox(index);
+            });
+        });
+    }
+
+    function openLightbox(index) {
+        if (carouselImages.length === 0) return;
+        
+        currentImageIndex = index;
+        const img = carouselImages[currentImageIndex];
+        lightboxImg.src = img.src;
+        lightbox.classList.add('show');
+        document.body.classList.add('lightbox-open');
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('show');
+        document.body.classList.remove('lightbox-open');
+    }
+
+    function prevImage() {
+        currentImageIndex = (currentImageIndex - 1 + carouselImages.length) % carouselImages.length;
+        lightboxImg.src = carouselImages[currentImageIndex].src;
+    }
+
+    function nextImage() {
+        currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+        lightboxImg.src = carouselImages[currentImageIndex].src;
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+    if (prevBtn) prevBtn.addEventListener('click', prevImage);
+    if (nextBtn) nextBtn.addEventListener('click', nextImage);
+
+    lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('show')) return;
+        
+        if (e.key === 'Escape') {
+            closeLightbox();
+        } else if (e.key === 'ArrowLeft') {
+            prevImage();
+        } else if (e.key === 'ArrowRight') {
+            nextImage();
+        }
+    });
+});
+

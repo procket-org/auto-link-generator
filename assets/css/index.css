@@ -248,6 +248,69 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
+.screenshots-section .carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.screenshots-section .carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 55.25%;
+    overflow: hidden;
+    background-color: #f8f9fa;
+}
+
+.screenshots-section .carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+}
+
+.screenshots-section .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    background-color: #f8f9fa;
+}
+
+.screenshots-section .carousel-control-prev,
+.screenshots-section .carousel-control-next {
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.screenshots-section .carousel:hover .carousel-control-prev,
+.screenshots-section .carousel:hover .carousel-control-next {
+    opacity: 0.8;
+}
+
+.screenshots-section .carousel-indicators {
+    margin-bottom: 10px;
+}
+
+.screenshots-section .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .screenshots-section .carousel-inner {
+        padding-bottom: 75%;
+    }
+}
+
 .support-section {
     padding: 80px 0;
 }
@@ -391,4 +454,113 @@ footer a:hover {
 
 .feature-card ul li {
     margin-bottom: 8px;
+}
+
+.screenshots-section .carousel-control-prev-icon,
+.screenshots-section .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-size: 50% 50%;
+}
+
+.screenshots-section .carousel-caption h5,
+.screenshots-section .carousel-caption p {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.3s ease;
+}
+
+.lightbox.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    animation: zoomIn 0.3s;
+    position: relative;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1101;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lightbox-close:hover {
+    background-color: rgba(255, 0, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1101;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.lightbox-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes zoomIn {
+    from {transform: scale(0.9);}
+    to {transform: scale(1);}
+}
+
+body.lightbox-open {
+    overflow: hidden;
 }
