@@ -1,0 +1,2482 @@
+/**
+ * Auto Link Generator Admin Styles
+ * Version: 2.0.0
+ */
+
+/* Global styles */
+.alg-wrap {
+    margin: 20px 0;
+}
+
+/* Form styles */
+.alg-section {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.alg-section h2 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Two-column layout for global settings */
+.alg-settings-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+.alg-settings-left {
+    flex: 1;
+    min-width: 300px;
+}
+
+.alg-settings-right {
+    flex: 1;
+    min-width: 300px;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+.alg-settings-right h3 {
+    margin-top: 0;
+}
+
+/* Dropdown search box styles */
+.alg-post-dropdown {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.alg-post-search {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.alg-post-search input {
+    width: 100%;
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+/* Floating search results dropdown */
+.alg-search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: -1px;
+}
+
+.alg-search-results-dropdown ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.alg-search-results-dropdown li {
+    padding: 8px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.alg-search-results-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.alg-search-results-dropdown li:hover {
+    background-color: #f8f9fa;
+}
+
+/* Form styles */
+.alg-form-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.alg-form-field {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.alg-form-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.alg-form-field input[type="text"],
+.alg-form-field input[type="number"] {
+    width: 100%;
+}
+
+.alg-form-submit {
+    margin-bottom: 10px;
+}
+
+/* Table action area */
+.alg-table-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.alg-bulk-actions, 
+.alg-search, 
+.alg-per-page {
+    margin-bottom: 10px;
+}
+
+.alg-search input {
+    width: 200px;
+    margin-right: 5px;
+}
+
+.alg-table-container {
+    overflow-x: auto;
+}
+
+.alg-table-container table tr > td {
+    vertical-align: middle;
+}
+
+.alg-table-container .widefat .check-column {
+    padding: 8px 10px;
+}
+
+/* Table content */
+.alg-table tr {
+    text-align: left;
+}
+
+.alg-wrap table .actions {
+    width: 120px;
+}
+
+.alg-wrap table .actions button {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.alg-wrap table .button-link-delete {
+    color: #a00;
+}
+
+.alg-wrap table .button-link-delete:hover {
+    color: #dc3232;
+    border-color: #dc3232;
+}
+
+/* Pagination styles */
+.alg-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.alg-page-info {
+    margin: 0 10px;
+}
+
+/* Excluded posts styles */
+.alg-excluded-posts {
+    margin-top: 15px;
+}
+
+.alg-excluded-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.alg-excluded-header h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.alg-excluded-posts .alg-per-page {
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.alg-excluded-posts table tr > td {
+    vertical-align: middle;
+}
+
+/* Adjust column width */
+.alg-excluded-posts .column-action {
+    width: 80px;
+    text-align: left;
+}
+
+.alg-excluded-posts .column-date {
+    width: 120px;
+    text-align: left;
+}
+
+/* Keyword table column width adjustment */
+.alg-table-container .column-primary {
+    width: 25%;
+}
+
+.alg-table-container .actions {
+    width: 120px;
+}
+
+/* Ensure precise width control for operation column */
+.alg-table-container th.actions,
+.alg-table-container td.actions {
+    width: 120px !important;
+    max-width: 120px !important;
+}
+
+.alg-table-container td.actions .button {    padding: 0 8px !important;    font-size: 12px;    min-height: 26px;    line-height: 24px;    margin-right: 3px !important;    margin-bottom: 3px !important;}
+
+.alg-table-container td.actions {
+    padding: 5px 8px;
+}
+
+.alg-table-container td.actions .button-link-delete {
+    color: #a00 !important;
+}
+
+/* Input box styles in edit state */
+.alg-table-container td input[type="text"] {
+    width: 95% !important;
+    max-width: 100% !important;
+    padding: 4px 6px;
+    font-size: 13px;
+    height: 28px;
+}
+
+/* Keyword and link column styles in edit state */
+.alg-table-container td.column-primary input[type="text"] {
+    width: 95% !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .alg-settings-container {
+        flex-direction: column;
+    }
+    
+    .alg-settings-right {
+        border-left: none;
+        padding-left: 0;
+        padding-top: 20px;
+        border-top: 1px solid #eee;
+        margin-top: 20px;
+    }
+    
+    .alg-excluded-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .alg-excluded-posts .alg-per-page {
+        width: 100%;
+        text-align: left;
+    }
+    
+    .alg-form-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .alg-form-field {
+        margin-right: 0;
+    }
+    
+    .alg-table-actions {
+        flex-direction: row;
+    }
+
+    .alg-table-actions .button.alg-apply-bulk-action {
+        margin-bottom: 0;
+    }
+    
+    .alg-search input {
+        width: 100%;
+        max-width: unset;
+    }
+    
+    .alg-post-search {
+        flex-direction: column;
+    }
+    
+    .alg-post-search input {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: unset;
+    }
+}
+
+/* Table styles */
+.alg-wrap #alg-settings-table {
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+}
+
+.alg-wrap #alg-settings-table th {
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+}
+
+.alg-wrap #alg-settings-table td {
+    padding: 8px 10px;
+    vertical-align: middle;
+}
+
+.alg-wrap #alg-settings-table {
+    margin-bottom: 15px;
+}
+
+.alg-wrap #alg-submit-settings {
+    margin-left: 10px;
+}
+
+/* Switch button styles */
+.alg-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 24px;
+}
+
+.alg-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.alg-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.alg-slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.alg-switch input:checked + .alg-slider {
+    background-color: #2271b1;
+}
+
+.alg-switch input:checked + .alg-slider:before {
+    transform: translateX(20px);
+}
+
+/* URL link styles */
+.alg-url-link {
+    color: #2271b1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.alg-url-link:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+/* Edit field styles */
+.alg-edit-field {
+    width: 95%;
+    padding: 3px 5px;
+}
+
+#alg-keyword-search {
+    min-width: 190px;
+}
+
+/* Table container styles */
+#alg-keywords-table-container {
+    position: relative;
+    min-height: 100px;
+}
+
+#alg-keywords-table-container.loading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+#alg-keywords-table-container.loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    z-index: 2;
+    animation: alg-spin 1s linear infinite;
+}
+
+@keyframes alg-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Inline tip styles */
+.alg-inline-tip {
+    margin-left: 10px;
+    color: #666;
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+}
+
+/* Modal window styles */
+.alg-modal {
+    display: none;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.alg-modal-content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 90%;
+    max-width: 400px;
+    min-width: 280px;
+    min-height: 140px;
+    border-radius: 6px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alg-modal-close {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #666;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.alg-modal-close:hover {
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+#alg-modal-message {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 15px 0;
+    padding: 5px;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.alg-modal.alg-success #alg-modal-message {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.alg-modal.alg-error #alg-modal-message {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.alg-modal.alg-confirm #alg-modal-message {
+    color: #444;
+    font-weight: 500;
+}
+
+#alg-modal-buttons {
+    margin-top: 15px;
+    text-align: right;
+    padding-top: 15px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.alg-modal.alg-confirm #alg-modal-buttons {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.alg-modal-confirm {
+    background-color: #2271b1 !important;
+    color: white !important;
+    min-width: 80px;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 15px !important;
+}
+
+.alg-modal-cancel {
+    min-width: 80px;
+    height: 32px;
+    line-height: 30px;
+    padding: 0 15px !important;
+    margin-right: 10px;
+}
+
+/* New: Highlight animation - uniform for PC and mobile */
+@keyframes highlight-pulse {
+    0% {
+        background-color: rgba(33, 150, 243, 0.1);
+    }
+    50% {
+        background-color: rgba(33, 150, 243, 0.3);
+    }
+    100% {
+        background-color: rgba(33, 150, 243, 0);
+    }
+}
+
+/* New: Badge fade-in animation - used for temporary hint messages */
+@keyframes badge-fade-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Generic highlight base styles */
+.alg-highlight-item {
+    position: relative;
+}
+
+/* Mobile view highlight styles */
+.mobile-view .alg-highlight-item {
+    position: relative;
+    animation: highlight-pulse 0.5s ease-in-out 3;
+    border-left: 4px solid #2196f3;
+}
+
+/* PC view highlight table row styles */
+.desktop-view table.alg-keywords-table tr.alg-row-highlight {
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+    z-index: 1;
+    position: relative;
+    animation: highlight-pulse 0.5s ease-in-out 3;
+}
+
+/* PC view highlight table cell styles */
+.desktop-view table.alg-keywords-table tr.alg-row-highlight td {
+    /* Remove background color, keep white background */
+    background-color: transparent;
+    /* Remove transition effect */
+    transition: none;
+}
+
+/* PC view highlight table left border styles */
+.desktop-view table.alg-keywords-table tr.alg-row-highlight td:first-child {
+    border-left: 4px solid #2196f3;
+    padding-left: 6px;
+}
+
+/* Ensure border does not break layout */
+.desktop-view table.alg-keywords-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+/* Responsive design - mobile modal window optimization */
+@media screen and (max-width: 782px) {
+    .alg-modal-content {
+        width: 95%;
+        max-width: 320px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    #alg-modal-message {
+        font-size: 14px;
+        margin: 10px 0;
+        padding: 3px;
+    }
+
+    .alg-modal-confirm,
+    .alg-modal-cancel {
+        height: 36px;
+        line-height: 34px;
+        padding: 0 12px !important;
+        font-size: 13px;
+    }
+
+    #alg-modal-buttons {
+        margin-top: 12px;
+        padding-top: 12px;
+    }
+}
+
+/* Load animation */
+.alg-loading {
+    position: relative;
+}
+
+.alg-loading:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+
+.alg-loading:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    animation: alg-spin 1s linear infinite;
+    z-index: 2;
+}
+
+#alg-keywords-table-container input.alg-keyword-select {
+    margin-left: 8px;
+}
+
+@keyframes alg-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Responsive design */
+@media screen and (max-width: 782px) {
+    /* Global container styles */
+    .alg-wrap {
+        margin: 10px 0;
+    }
+
+    .alg-section {
+        padding: 0 10px 15px;
+        margin: 1em 0;
+    }
+
+    /* Title styles adjustment */
+    .alg-section h2 {
+        padding: 10px 15px;
+        margin: 0 -10px 15px;
+        font-size: 15px;
+    }
+
+    /* Keyword list area */
+    .alg-keyword-list-section {
+        padding: 15px 10px;
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+
+    .alg-keyword-list-section h2 {
+        margin: -15px -10px 15px -10px;
+        padding: 12px 15px;
+        font-size: 15px;
+    }
+
+    #alg-settings-form {
+        margin-bottom: 15px;
+    }
+
+    .alg-inline-tip {
+        margin-left: 0;
+    }
+
+    /* Table area optimization */
+    .alg-keywords-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        border: none !important;
+        background: transparent;
+        box-shadow: none !important;
+        margin: 0 !important;
+    }
+
+    .alg-keywords-table thead {
+        display: block !important;
+    }
+
+    /* Hide all cells except the first one in header */
+    .alg-keywords-table thead th:not(:first-child) {
+        display: none !important;
+    }
+
+    /* Specifically display the first cell in header (full select button location) */
+    .alg-keywords-table thead th:first-child {
+        display: block !important;
+        width: 100% !important;
+        text-align: left !important;
+        padding: 10px !important;
+        background-color: #f0f0f1 !important;
+        border-radius: 4px 4px 0 0 !important;
+    }
+
+    .alg-keywords-table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    .alg-keywords-table tr {
+        display: block;
+        margin-bottom: 15px;
+        padding: 10px;
+        background: #fff;
+        border: 1px solid #e2e4e7;
+        border-radius: 4px;
+    }
+
+    .alg-keywords-table td {
+        display: block;
+        padding: 8px 0;
+        border: none;
+        text-align: left;
+    }
+
+    /* Add mobile tag */
+    .alg-keywords-table td:before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #666;
+    }
+
+    /* Input box and button styles */
+    .alg-edit-field,
+    input[type="text"],
+    input[type="url"],
+    input[type="search"] {
+        width: 100% !important;
+        max-width: none;
+        margin: 5px 0;
+    }
+
+    /* Table area styles */
+    .tablenav {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 0 0 15px 0;
+        padding: 0;
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+    .tablenav br.clear {
+        display: none !important;
+        height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        line-height: 0 !important;
+        font-size: 0 !important;
+    }
+
+    .tablenav > * {
+        margin: 0 !important;
+    }
+
+    .tablenav .alignleft,
+    .tablenav .alignright {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Search box and button container */
+    .search-box {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 0 15px 0 !important;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        background: transparent !important;
+    }
+
+    /* Search box */
+    .search-box input[type="search"] {
+        flex: 1;
+        width: auto !important;
+        margin: 0 !important;
+        height: 36px !important;
+        border-radius: 4px;
+        font-size: 14px;
+        border: 1px solid #ddd;
+        padding: 0 10px;
+        min-height: 36px;
+        line-height: normal;
+    }
+
+    /* Search button and apply button */
+    .search-box .button,
+    #alg-do-bulk-action,
+    #alg-do-bulk-action-mobile {
+        height: 36px !important;
+        min-height: 36px !important;
+        line-height: 34px !important;
+        padding: 0 12px !important;
+        font-size: 14px;
+        min-width: 60px;
+        margin: 0 !important;
+        border-radius: 4px;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    /* Batch operation area */
+    .bulkactions {
+        display: flex !important;
+        gap: 8px;
+        margin: 0 !important;
+        width: 100%;
+        padding: 10px;
+        background: #fff;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+    }
+
+    /* Batch operation dropdown */
+    .bulk-action-selector {
+        flex: 1 !important;
+        min-width: 120px !important;
+        height: 36px !important;
+        margin: 0 !important;
+        font-size: 14px;
+    }
+
+    /* Add keyword form */
+    .alg-add-keyword {
+        margin-bottom: 20px;
+        background: #fff;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .alg-form-row {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .alg-form-row input,
+    .alg-form-row button {
+        width: 100%;
+        height: 36px !important;
+        margin: 0 !important;
+        border-radius: 4px;
+    }
+
+    .alg-form-row button {
+        margin-top: 5px !important;
+    }
+
+    /* All select area */
+    .select-all-container {
+        background: #f0f0f1;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .select-all-label {
+        font-size: 14px;
+        color: #666;
+    }
+
+    /* Keyword list */
+    .alg-keywords-list {
+        display: grid;
+        gap: 10px;
+    }
+
+    .alg-keyword-item {
+        background: #fff;
+        border: 1px solid #e2e4e7;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .alg-keyword-checkbox {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 1;
+    }
+
+    .alg-keyword-content {
+        padding: 12px;
+    }
+
+    .alg-keyword-header {
+        margin-bottom: 10px;
+        padding-right: 30px;
+    }
+
+    .alg-keyword-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1d2327;
+        margin-bottom: 8px;
+        padding-right: 25px;
+    }
+
+    .alg-switch {
+        position: absolute;
+        top: 40px;
+        right: 12px;
+    }
+
+    .alg-keyword-url {
+        margin-bottom: 8px;
+        word-break: break-all;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .alg-keyword-meta {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 12px;
+    }
+
+    .alg-keyword-actions {
+        display: flex;
+        gap: 8px;
+        padding-top: 12px;
+        border-top: 1px solid #f0f0f0;
+    }
+
+    .alg-keyword-actions .button {
+        flex: 1;
+        text-align: center;
+        height: 36px;
+        line-height: 34px;
+        font-size: 13px;
+        padding: 0 10px;
+    }
+
+    /* Edit state */
+    .alg-keyword-item.editing {
+        background: #f8f9fa;
+    }
+
+    .alg-keyword-item.editing .alg-edit-field {
+        width: 100%;
+        margin: 5px 0;
+        height: 36px;
+    }
+
+    /* Remove br.clear from tablenav */
+    .tablenav br.clear {
+        display: none !important;
+    }
+}
+
+/* Mobile search area optimization */
+@media screen and (max-width: 782px) {
+    .tablenav {
+        margin: 0 0 15px 0 !important;
+        min-height: auto !important;
+    }
+
+    .tablenav.top {
+        margin-top: 0 !important;
+    }
+
+    .search-box {
+        margin-bottom: 8px !important;
+    }
+}
+
+/* Comprehensive solution for mobile styles conflicting with WordPress backend */
+@media screen and (max-width: 782px) {
+    /* All select checkbox container styles */
+    .alg-wrap .select-all-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        padding: 8px 10px !important;
+        background: #f0f0f1 !important;
+        border-radius: 4px !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .alg-wrap .select-all-label {
+        font-size: 14px !important;
+        color: #50575e !important;
+        user-select: none !important;
+    }
+    
+    /* List item checkboxes */
+    .alg-wrap .alg-keyword-checkbox {
+        position: relative !important; /* Change to relative positioning */
+        top: auto !important;
+        right: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 1 !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Checkboxes themselves centered display */
+    .alg-wrap .alg-table-container .alg-table th.check-column input[type="checkbox"],
+    .alg-wrap .alg-table-container .alg-table td.check-column input[type="checkbox"] {
+        margin: 0 !important;
+        float: none !important;
+        position: static !important;
+    }
+    
+    /* Fix table header checkboxes */
+    .alg-wrap .alg-table-container .alg-table thead th.check-column {
+        z-index: 2 !important; /* Ensure header checkboxes higher level */
+    }
+}
+
+/* Generic layout and spacing optimization */
+.alg-section {
+    margin-bottom: 30px;
+}
+
+.alg-keywords-table {
+    margin-bottom: 15px;
+}
+
+/* Keyword list page container */
+.alg-pagination-container, .alg-mobile-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.alg-per-page-selector {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.alg-pagination {
+    flex-grow: 0;
+}
+
+.alg-pagination .tablenav-pages {
+    float: none;
+    margin: 0;
+}
+
+/* Excluded posts search bar and page selector */
+.alg-search-post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.alg-search-post {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.alg-search-post input[type='text'] {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    margin: 0;
+}
+
+.alg-posts-per-page-selector {
+    text-align: right;
+    padding-left: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.alg-posts-per-page-selector select {
+    height: 30px;
+    margin: 0;
+}
+
+/* Responsive layout optimization */
+@media screen and (max-width: 782px) {
+    .alg-pagination-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .alg-mobile-pagination-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .alg-pagination .tablenav-pages {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .alg-per-page-selector,
+    .alg-per-page-selector-mobile {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    .alg-search-post-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .alg-posts-per-page-selector {
+        text-align: right;
+        margin-top: 0;
+        padding-left: 15px;
+    }
+
+    .alg-search-post input[type='text'] {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+/* Add: Ensure dropdown selector styles uniform */
+.alg-per-page-selector select,
+.alg-posts-per-page-selector select {
+    height: 30px;
+    margin: 0;
+    padding: 0 24px 0 8px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Add: Optimize mobile search box and selector alignment */
+@media screen and (max-width: 480px) {
+    .alg-search-post-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .alg-search-post {
+        width: 100%;
+    }
+
+    .alg-posts-per-page-selector {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .alg-per-page-selector,
+    .alg-per-page-selector-mobile {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Page input box styles */
+.current-page-form {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.current-page {
+    width: 60px !important;
+    height: 28px !important;
+    text-align: center;
+    padding: 0 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.current-page::-webkit-inner-spin-button,
+.current-page::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 28px;
+}
+
+.tablenav-paging-text {
+    vertical-align: middle;
+    line-height: 28px;
+    display: inline-block;
+}
+
+/* Mobile adaptation */
+@media screen and (max-width: 782px) {
+    .current-page {
+        height: 36px !important;
+        font-size: 14px;
+    }
+
+    .current-page::-webkit-inner-spin-button,
+    .current-page::-webkit-outer-spin-button {
+        height: 36px;
+    }
+
+    .tablenav-paging-text {
+        line-height: 36px;
+    }
+}
+
+/* New keyword hint message */
+.alg-new-keyword-message {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4CAF50;
+    color: #333;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: badge-fade-in 0.3s ease-out forwards;
+}
+
+
+.alg-mobile-pagination-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.alg-pagination-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.alg-pagination-header .alg-page-status {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.alg-pagination-header .alg-total-items {
+    color: #777;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.alg-pagination-header .alg-per-page-selector-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.alg-pagination-header .alg-per-page-selector-mobile select {
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.alg-pagination-mobile {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+}
+
+.alg-page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alg-page-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.alg-page-btn {
+    display: flex;
+    align-items: center;
+    background: #2271b1;
+    color: #fff !important;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    min-width: 60px;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.alg-page-btn:hover {
+    background-color: #135e96;
+}
+
+.alg-page-btn.disabled {
+    background-color: #ddd;
+    color: #999 !important;
+    cursor: not-allowed;
+}
+
+.alg-page-jump {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.alg-jump-form {
+    display: flex;
+    align-items: center;
+}
+
+.alg-jump-input {
+    width: 40px !important;
+    height: 34px !important;
+    border: none !important;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent;
+}
+
+.alg-jump-btn {
+    height: 34px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    padding: 0 8px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.alg-jump-btn:hover {
+    background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 480px) {
+    .alg-mobile-pagination-container {
+        padding: 12px 10px;
+    }
+    
+    .alg-pagination-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .alg-pagination-header .alg-per-page-selector-mobile {
+        width: 100%;
+    }
+    
+    .alg-pagination-header .alg-per-page-selector-mobile select {
+        width: 100%;
+    }
+    
+    .alg-page-buttons {
+        gap: 8px;
+    }
+    
+    .alg-page-btn {
+        padding: 5px 8px;
+        min-width: 40px;
+        font-size: 12px;
+    }
+    
+    .alg-page-jump {
+        padding: 1px;
+    }
+    
+    .alg-jump-input {
+        width: 35px !important;
+        height: 30px !important;
+    }
+    
+    .alg-jump-btn {
+        height: 30px;
+        padding: 0 6px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .alg-page-btn .btn-text {
+        display: none;
+    }
+    
+    .alg-page-btn {
+        min-width: 30px;
+        padding: 5px;
+    }
+}
+
+/* Keyword list header styles */
+.alg-keywords-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.alg-keywords-header h2 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.alg-keywords-search {
+    display: flex;
+    align-items: center;
+}
+
+.alg-keywords-search input[type="text"] {
+    margin-right: 8px;
+    width: 250px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .alg-keywords-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .alg-keywords-header h2 {
+        margin-bottom: 15px;
+    }
+    
+    .alg-keywords-search {
+        width: 100%;
+    }
+    
+    .alg-keywords-search input[type="text"] {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* SweetAlert2 custom styles */
+.swal2-popup {
+    font-size: 14px !important;
+    border-radius: 8px !important;
+}
+
+/* Confirm dialog styles */
+.alg-confirm-dialog {
+    width: 400px !important;
+    padding: 25px !important;
+}
+
+.swal2-title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #1d2327 !important;
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+.swal2-html-container {
+    font-size: 14px !important;
+    color: #50575e !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.swal2-actions {
+    margin-top: 25px !important;
+}
+
+.swal2-confirm {
+    background-color: #2271b1 !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    padding: 8px 20px !important;
+    min-width: 80px !important;
+}
+
+.swal2-cancel {
+    background-color: #6c757d !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    padding: 8px 20px !important;
+    min-width: 80px !important;
+    margin-left: 10px !important;
+}
+
+/* Toast position adjustment */
+.swal2-container.swal2-top-end {
+    top: 52px !important;
+    right: 20px !important;
+}
+
+/* Mobile adaptation */
+@media screen and (max-width: 782px) {
+    .swal2-container.swal2-top-end {
+        top: 46px !important;
+        right: 10px !important;
+    }
+}
+
+/* Adapt for collapsed menu */
+@media screen and (max-width: 600px) {
+    .swal2-container.swal2-top-end {
+        top: 0 !important;
+    }
+}
+
+/* Custom table styles, replacing wp-list-table fixed class */
+.alg-table {
+    width: 100%;
+    border-collapse: collapse;
+    max-width: 100%;
+    table-layout: auto; /* Use automatic layout instead of fixed layout */
+}
+
+.alg-table th,
+.alg-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle !important;
+}
+
+/* Table container adds horizontal scrolling functionality */
+.alg-table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Improve iOS scrolling experience */
+    margin-bottom: 15px;
+}
+
+/* Checkboxes themselves centered display */
+.alg-table th.check-column input[type="checkbox"],
+.alg-table td.check-column input[type="checkbox"] {
+    margin: 0 !important;
+    float: none !important;
+    position: static !important;
+}
+
+/* Operation column styles optimization */
+.alg-table th.actions,
+.alg-table td.actions {
+    width: 120px !important;
+    max-width: 120px !important;
+    white-space: nowrap !important;
+    padding: 8px 10px !important;
+}
+
+.alg-table td.actions .button {
+    padding: 0 8px !important;
+    font-size: 12px;
+    min-height: 26px;
+    line-height: 24px;
+    margin-right: 3px !important;
+    margin-bottom: 3px !important;
+}
+
+/* Responsive layout table special handling */
+@media screen and (max-width: 782px) {
+    /* Remove wp-list-table and fixed class issues */
+    .wp-list-table.fixed {
+        table-layout: auto !important;
+    }
+    
+    .alg-table {
+        display: table;
+        table-layout: auto;
+    }
+    
+    .alg-table th,
+    .alg-table td {
+        word-break: break-word; /* Allow breaking in words */
+        overflow: visible; /* Don't truncate content */
+        border: none !important;
+    }
+    
+    .alg-table tr {
+        border-bottom: 1px solid #f0f0f0;
+    }
+    
+    /* Mobile operation column styles optimization */
+    .alg-table th.actions,
+    .alg-table td.actions {
+        min-width: 60px !important; /* Reduce operation column width */
+        width: 60px !important;
+        max-width: 60px !important;
+        white-space: normal !important; /* Allow content breaking */
+        padding: 5px !important; /* Reduce inner padding */
+    }
+    
+    /* Button vertical arrangement */
+    .alg-table td.actions .button {
+        margin: 2px 0 !important;
+        padding: 0 5px !important;
+        height: 26px !important;
+        line-height: 24px !important;
+        font-size: 11px;
+        text-align: center;
+        display: block !important; /* Button block level display */
+        width: 100% !important; /* Button width 100% */
+    }
+    
+    /* Ensure buttons have spacing */
+    .alg-table td.actions .button + .button {
+        margin-top: 5px !important;
+    }
+    
+    /* Keyword and link address column styles */
+    .alg-table .column-primary {
+        width: 25% !important; /* Limit keyword column width */
+        max-width: 25% !important;
+    }
+}
+
+/* Fix mobile checkbox styles */
+@media screen and (max-width: 782px) {
+    
+    /* All select checkbox container styles */
+    .alg-wrap .select-all-container {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        padding: 8px 10px !important;
+        background: #f0f0f1 !important;
+        border-radius: 4px !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .alg-wrap .select-all-label {
+        font-size: 14px !important;
+        color: #50575e !important;
+        user-select: none !important;
+    }
+    
+    /* List item checkboxes */
+    .alg-wrap .alg-keyword-checkbox {
+        position: relative !important; /* Change to relative positioning */
+        top: auto !important;
+        right: auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        z-index: 1 !important;
+        margin: 0 auto !important;
+    }
+    
+    /* Checkboxes themselves centered display */
+    .alg-wrap .alg-table-container .alg-table th.check-column input[type="checkbox"],
+    .alg-wrap .alg-table-container .alg-table td.check-column input[type="checkbox"] {
+        margin: 0 !important;
+        float: none !important;
+        position: static !important;
+    }
+    
+    /* Fix table header checkboxes */
+    .alg-wrap .alg-table-container .alg-table thead th.check-column {
+        z-index: 2 !important; /* Ensure header checkboxes higher level */
+    }
+}
+
+/* Generic layout and spacing optimization */
+.alg-section {
+    margin-bottom: 30px;
+}
+
+.alg-keywords-table {
+    margin-bottom: 15px;
+}
+
+/* Keyword list page container */
+.alg-pagination-container, .alg-mobile-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    padding: 10px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.alg-per-page-selector {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.alg-pagination {
+    flex-grow: 0;
+}
+
+.alg-pagination .tablenav-pages {
+    float: none;
+    margin: 0;
+}
+
+/* Excluded posts search bar and page selector */
+.alg-search-post-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.alg-search-post {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.alg-search-post input[type='text'] {
+    width: 100%;
+    max-width: 300px;
+    height: 30px;
+    margin: 0;
+}
+
+.alg-posts-per-page-selector {
+    text-align: right;
+    padding-left: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+}
+
+.alg-posts-per-page-selector select {
+    height: 30px;
+    margin: 0;
+}
+
+/* Responsive layout optimization */
+@media screen and (max-width: 782px) {
+    .alg-pagination-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .alg-mobile-pagination-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .alg-pagination .tablenav-pages {
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    .alg-per-page-selector,
+    .alg-per-page-selector-mobile {
+        margin-left: auto;
+        text-align: right;
+    }
+
+    .alg-search-post-container {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .alg-posts-per-page-selector {
+        text-align: right;
+        margin-top: 0;
+        padding-left: 15px;
+    }
+
+    .alg-search-post input[type='text'] {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+/* Add: Ensure dropdown selector styles uniform */
+.alg-per-page-selector select,
+.alg-posts-per-page-selector select {
+    height: 30px;
+    margin: 0;
+    padding: 0 24px 0 8px;
+    line-height: 28px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Add: Optimize mobile search box and selector alignment */
+@media screen and (max-width: 480px) {
+    .alg-search-post-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .alg-search-post {
+        width: 100%;
+    }
+
+    .alg-posts-per-page-selector {
+        width: 100%;
+        padding-left: 0;
+        text-align: left;
+    }
+
+    .alg-per-page-selector,
+    .alg-per-page-selector-mobile {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Page input box styles */
+.current-page-form {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.current-page {
+    width: 60px !important;
+    height: 28px !important;
+    text-align: center;
+    padding: 0 4px;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+
+.current-page::-webkit-inner-spin-button,
+.current-page::-webkit-outer-spin-button {
+    opacity: 1;
+    height: 28px;
+}
+
+.tablenav-paging-text {
+    vertical-align: middle;
+    line-height: 28px;
+    display: inline-block;
+}
+
+/* Mobile adaptation */
+@media screen and (max-width: 782px) {
+    .current-page {
+        height: 36px !important;
+        font-size: 14px;
+    }
+
+    .current-page::-webkit-inner-spin-button,
+    .current-page::-webkit-outer-spin-button {
+        height: 36px;
+    }
+
+    .tablenav-paging-text {
+        line-height: 36px;
+    }
+}
+
+/* New keyword hint message */
+.alg-new-keyword-message {
+    background-color: #f8f9fa;
+    border-left: 4px solid #4CAF50;
+    color: #333;
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-size: 13px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: badge-fade-in 0.3s ease-out forwards;
+}
+
+
+.alg-mobile-pagination-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.alg-pagination-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.alg-pagination-header .alg-page-status {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+}
+
+.alg-pagination-header .alg-total-items {
+    color: #777;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+.alg-pagination-header .alg-per-page-selector-mobile {
+    display: flex;
+    align-items: center;
+}
+
+.alg-pagination-header .alg-per-page-selector-mobile select {
+    height: 35px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    padding: 0 10px;
+    font-size: 13px;
+}
+
+.alg-pagination-mobile {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+}
+
+.alg-page-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.alg-page-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.alg-page-btn {
+    display: flex;
+    align-items: center;
+    background: #2271b1;
+    color: #fff !important;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    min-width: 60px;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.alg-page-btn:hover {
+    background-color: #135e96;
+}
+
+.alg-page-btn.disabled {
+    background-color: #ddd;
+    color: #999 !important;
+    cursor: not-allowed;
+}
+
+.alg-page-jump {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 4px;
+    padding: 2px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.alg-jump-form {
+    display: flex;
+    align-items: center;
+}
+
+.alg-jump-input {
+    width: 40px !important;
+    height: 34px !important;
+    border: none !important;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent;
+}
+
+.alg-jump-btn {
+    height: 34px;
+    background: #f0f0f0;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    padding: 0 8px;
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.alg-jump-btn:hover {
+    background-color: #e5e5e5;
+}
+
+@media screen and (max-width: 480px) {
+    .alg-mobile-pagination-container {
+        padding: 12px 10px;
+    }
+    
+    .alg-pagination-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .alg-pagination-header .alg-per-page-selector-mobile {
+        width: 100%;
+    }
+    
+    .alg-pagination-header .alg-per-page-selector-mobile select {
+        width: 100%;
+    }
+    
+    .alg-page-buttons {
+        gap: 8px;
+    }
+    
+    .alg-page-btn {
+        padding: 5px 8px;
+        min-width: 40px;
+        font-size: 12px;
+    }
+    
+    .alg-page-jump {
+        padding: 1px;
+    }
+    
+    .alg-jump-input {
+        width: 35px !important;
+        height: 30px !important;
+    }
+    
+    .alg-jump-btn {
+        height: 30px;
+        padding: 0 6px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .alg-page-btn .btn-text {
+        display: none;
+    }
+    
+    .alg-page-btn {
+        min-width: 30px;
+        padding: 5px;
+    }
+}
+
+/* Keyword list header styles */
+.alg-keywords-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.alg-keywords-header h2 {
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.alg-keywords-search {
+    display: flex;
+    align-items: center;
+}
+
+.alg-keywords-search input[type="text"] {
+    margin-right: 8px;
+    width: 250px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .alg-keywords-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .alg-keywords-header h2 {
+        margin-bottom: 15px;
+    }
+    
+    .alg-keywords-search {
+        width: 100%;
+    }
+    
+    .alg-keywords-search input[type="text"] {
+        width: 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+}
+
+/* SweetAlert2 custom styles */
+.swal2-popup {
+    font-size: 14px !important;
+    border-radius: 8px !important;
+}
+
+/* Confirm dialog styles */
+.alg-confirm-dialog {
+    width: 400px !important;
+    padding: 25px !important;
+}
+
+.swal2-title {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    color: #1d2327 !important;
+    padding: 0 !important;
+    margin-bottom: 15px !important;
+}
+
+.swal2-html-container {
+    font-size: 14px !important;
+    color: #50575e !important;
+    margin: 0 0 20px 0 !important;
+    padding: 0 !important;
+}
+
+.swal2-actions {
+    margin-top: 25px !important;
+}
+
+.swal2-confirm {
+    background-color: #2271b1 !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    padding: 8px 20px !important;
+    min-width: 80px !important;
+}
+
+.swal2-cancel {
+    background-color: #6c757d !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    padding: 8px 20px !important;
+    min-width: 80px !important;
+    margin-left: 10px !important;
+}
+
+/* Toast position adjustment */
+.swal2-container.swal2-top-end {
+    top: 52px !important;
+    right: 20px !important;
+}
+
+/* Mobile adaptation */
+@media screen and (max-width: 782px) {
+    .swal2-container.swal2-top-end {
+        top: 46px !important;
+        right: 10px !important;
+    }
+}
+
+/* Adapt for collapsed menu */
+@media screen and (max-width: 600px) {
+    .swal2-container.swal2-top-end {
+        top: 0 !important;
+    }
+}
+
+/* Ensure table content not truncated on mobile */
+@media screen and (max-width: 782px) {
+    /* Text content automatic wrapping */
+    .alg-table td {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+    }
+    
+    /* Ensure link address visible on mobile */
+    .alg-table td a {
+        display: inline-block;
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+    }
+    
+    /* Optimize table row height, ensure content enough space */
+    .alg-table tr {
+        height: auto;
+        min-height: 50px;
+    }
+    
+    /* Improve table cell content alignment */
+    .alg-table td, 
+    .alg-table th {
+        padding: 10px 8px !important;
+        vertical-align: middle !important;
+    }
+}
+
+/* Fix styles on very small screen */
+@media screen and (max-width: 480px) {
+    /* Further adjust table inner padding */
+    .alg-table td, 
+    .alg-table th {
+        padding: 8px 5px !important;
+    }
+    
+    /* Operation column needs less width */
+    .alg-table th.actions,
+    .alg-table td.actions {
+        min-width: 50px !important; 
+        width: 50px !important;
+        max-width: 50px !important;
+    }
+    
+    /* Make buttons more compact */
+    .alg-table td.actions .button {
+        font-size: 10px;
+        padding: 0 4px !important;
+        height: 24px !important;
+        line-height: 22px !important;
+    }
+}
+
+/* Improve compatibility with WordPress backend */
+.alg-wrap .wp-list-table {
+    table-layout: auto !important;
+    width: 100% !important;
+}
+
+/* Fix WordPress backend default styles overwrite issue */
+.alg-wrap input[type="checkbox"] {
+    margin: 0 !important;
+    position: relative !important;
+}
+
+/* Fix mobile device table header and checkbox alignment issue */
+@media screen and (max-width: 782px) {
+    /* Table header checkboxes centered alignment */
+    .alg-table thead th.check-column {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        padding: 10px 0 !important;
+    }
+    
+    /* Checkbox column width consistency */
+    .alg-table th.check-column,
+    .alg-table td.check-column {
+        width: 36px !important;
+        min-width: 36px !important;
+        max-width: 36px !important;
+    }
+    
+    /* All select checkboxes and labels horizontal alignment */
+    .select-all-container {
+        display: flex !important;
+        align-items: center !important;
+        gap: 5px !important;
+    }
+    
+    /* Remove WordPress default styles impact on table */
+    .alg-table-container .wp-list-table.fixed {
+        position: static !important;
+        table-layout: auto !important;
+    }
+    
+    /* Ensure operation buttons correct vertical arrangement */
+    .alg-table td.actions {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        align-items: stretch !important;
+    }
+}
+
+/* Clear the keyword search input */
+.search-input-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-right: 8px;
+}
+.search-input-wrapper input[type="text"] {
+    width: 250px;
+    height: 30px;
+    padding-right: 30px;
+}
+.search-clear-icon {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-65%);
+    cursor: pointer;
+    color: #666;
+    font-size: 24px;
+    line-height: 1;
+    padding: 2px 5px;
+    z-index: 1;
+}
+.search-clear-icon:hover {
+    color: #d63638;
+}
+@media screen and (max-width: 782px) {
+    .search-input-wrapper {
+        display: block;
+        width: 100%;
+    }
+    .search-input-wrapper input[type="text"] {
+        width: 100%;
+    }
+}
