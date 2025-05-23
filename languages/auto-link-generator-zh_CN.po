@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto Link Generator 3.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-15T21:03:31+08:00\n"
-"PO-Revision-Date: 2025-05-18 18:35+0800\n"
+"Project-Id-Version: Auto Link Generator 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/auto-link-generator\n"
+"POT-Creation-Date: 2025-05-23T23:49:49+08:00\n"
+"PO-Revision-Date: 2025-05-24 00:00+0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: zh_CN\n"
@@ -21,9 +21,8 @@ msgid "Auto Link Generator"
 msgstr "自动链接生成器"
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: auto-link-generator.php
-msgid "https://github.com/procket-org"
+msgid "https://procket-org.github.io/auto-link-generator/"
 msgstr ""
 
 #. Description of the plugin
@@ -35,6 +34,45 @@ msgstr "基于关键词和标签自动生成内部链接，支持后台管理面
 #: auto-link-generator.php
 msgid "tony"
 msgstr "tony"
+
+#. Author URI of the plugin
+#: auto-link-generator.php
+msgid "https://github.com/procket-org"
+msgstr ""
+
+#: auto-link-generator.php:61
+msgid "Settings"
+msgstr "设置"
+
+#: auto-link-generator.php:70
+msgid "Documentation"
+msgstr "文档"
+
+#: auto-link-generator.php:71
+msgid "Support"
+msgstr "支持"
+
+#: includes/class-alg-admin.php:26
+#: includes/class-alg-admin.php:115
+msgid "Auto Link Settings"
+msgstr "自动链接设置"
+
+#: includes/class-alg-admin.php:27
+msgid "Auto Link"
+msgstr "自动链接"
+
+#: includes/class-alg-admin.php:83
+msgid "Confirm Action"
+msgstr "确认操作"
+
+#: includes/class-alg-admin.php:84
+msgid "OK"
+msgstr "确定"
+
+#: includes/class-alg-admin.php:85
+#: includes/class-alg-admin.php:346
+msgid "Cancel"
+msgstr "取消"
 
 #: includes/class-alg-admin.php:86
 msgid "Settings saved successfully"
@@ -60,7 +98,8 @@ msgstr "更新失败"
 msgid "Delete failed"
 msgstr "删除失败"
 
-#: includes/class-alg-admin.php:92 includes/class-alg-keywords.php:29
+#: includes/class-alg-admin.php:92
+#: includes/class-alg-keywords.php:29
 #: includes/class-alg-keywords.php:75
 msgid "Keyword and link URL cannot be empty"
 msgstr "关键词和链接地址不能为空"
@@ -85,7 +124,8 @@ msgstr "搜索失败"
 msgid "Post search failed"
 msgstr "文章搜索失败"
 
-#: includes/class-alg-admin.php:98 includes/class-alg-api.php:531
+#: includes/class-alg-admin.php:98
+#: includes/class-alg-api.php:555
 msgid "Failed to exclude post"
 msgstr "排除文章失败"
 
@@ -105,151 +145,248 @@ msgstr "未找到符合条件的文章"
 msgid "Please enter post title to search"
 msgstr "请输入要搜索的文章标题"
 
-#: includes/class-alg-admin.php:26 includes/class-alg-admin.php:114
-msgid "Auto Link Settings"
-msgstr "自动链接设置"
+#: includes/class-alg-admin.php:103
+msgid "Security verification failed. Please refresh the page and try again."
+msgstr "安全验证失败，请刷新页面后重试。"
 
-#: includes/class-alg-admin.php:27
-msgid "Auto Link"
-msgstr "自动链接"
-
-#: includes/class-alg-admin.php:118
+#: includes/class-alg-admin.php:119
 msgid "Global Settings"
 msgstr "全局设置"
 
-#: includes/class-alg-admin.php:126
+#: includes/class-alg-admin.php:127
 msgid "Automatic Tag Matching"
 msgstr "自动标签匹配"
 
-#: includes/class-alg-admin.php:131
+#: includes/class-alg-admin.php:132
 msgid "Enable automatic tag matching feature"
 msgstr "启用自动标签匹配功能"
 
-#: includes/class-alg-admin.php:137
+#: includes/class-alg-admin.php:138
 msgid "Case Sensitive"
 msgstr "区分大小写"
 
-#: includes/class-alg-admin.php:142
+#: includes/class-alg-admin.php:143
 msgid "Enable case sensitive matching"
 msgstr "启用区分大小写匹配功能"
 
-#: includes/class-alg-admin.php:148
+#: includes/class-alg-admin.php:149
 msgid "Maximum Links"
 msgstr "最大链接数量"
 
-#: includes/class-alg-admin.php:152
+#: includes/class-alg-admin.php:153
 msgid "Maximum number of links to replace per article, set to 0 for unlimited"
 msgstr "每篇文章最多替换的链接数量，设置为0表示不限制"
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Saving..."
 msgstr "保存中..."
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Save Global Settings"
 msgstr "保存全局设置"
 
-#: includes/class-alg-admin.php:163
+#: includes/class-alg-admin.php:164
 msgid "Excluded Posts"
 msgstr "排除的文章"
 
-#: includes/class-alg-admin.php:164
+#: includes/class-alg-admin.php:165
 msgid "Posts in this list will not have automatically generated links"
 msgstr "列表中的文章将不会自动生成链接"
 
-#: includes/class-alg-admin.php:173
+#: includes/class-alg-admin.php:174
 msgid "Enter keywords to search posts"
 msgstr "输入关键字搜索文章"
 
-#: includes/class-alg-admin.php:185
+#: includes/class-alg-admin.php:186
 msgid "Excluded Posts List"
 msgstr "排除文章列表"
 
-#: includes/class-alg-admin.php:189 includes/class-alg-admin.php:292
+#: includes/class-alg-admin.php:190
+#: includes/class-alg-admin.php:296
 msgid "items/page"
 msgstr "条/页"
 
-#: includes/class-alg-admin.php:199
+#: includes/class-alg-admin.php:200
 msgid "Post Title"
 msgstr "文章标题"
 
-#: includes/class-alg-admin.php:200
+#: includes/class-alg-admin.php:201
 msgid "Exclusion Time"
 msgstr "排除时间"
 
-#: includes/class-alg-admin.php:201
+#: includes/class-alg-admin.php:202
 msgid "Action"
 msgstr "操作"
 
-#: includes/class-alg-admin.php:217
+#: includes/class-alg-admin.php:207
+msgid "No excluded posts"
+msgstr "没有排除的文章"
+
+#: includes/class-alg-admin.php:218
 msgid "Remove"
 msgstr "移除"
 
-#: includes/class-alg-admin.php:243
+#: includes/class-alg-admin.php:228
+#: includes/class-alg-admin.php:365
+msgid "Previous"
+msgstr "上一页"
+
+#: includes/class-alg-admin.php:234
+#: includes/class-alg-admin.php:371
+msgid "Next"
+msgstr "下一页"
+
+#: includes/class-alg-admin.php:244
 msgid "Keyword Management"
 msgstr "关键词管理"
 
-#: includes/class-alg-admin.php:250 includes/class-alg-admin.php:305
+#: includes/class-alg-admin.php:251
+#: includes/class-alg-admin.php:309
 msgid "Keyword"
 msgstr "关键词"
 
-#: includes/class-alg-admin.php:254 includes/class-alg-admin.php:306
+#: includes/class-alg-admin.php:255
+#: includes/class-alg-admin.php:310
 msgid "Link URL"
 msgstr "链接地址"
 
-#: includes/class-alg-admin.php:269
+#: includes/class-alg-admin.php:260
+msgid "Adding..."
+msgstr "添加中..."
+
+#: includes/class-alg-admin.php:260
+msgid "Add Keyword"
+msgstr "添加关键词"
+
+#: includes/class-alg-admin.php:270
 msgid "Keyword List"
 msgstr "关键词列表"
 
-#: includes/class-alg-admin.php:281
-msgid "Bulk Actions"
-msgstr "批量操作"
-
-#: includes/class-alg-admin.php:282 includes/class-alg-admin.php:350
-msgid "Delete"
-msgstr "删除"
-
-#: includes/class-alg-admin.php:285
-msgid "Apply"
-msgstr "应用"
-
 #: includes/class-alg-admin.php:273
+msgid "Search keywords or links"
+msgstr "搜索关键词或链接"
+
+#: includes/class-alg-admin.php:277
 msgid "Search"
 msgstr "搜索"
 
-#: includes/class-alg-admin.php:308
+#: includes/class-alg-admin.php:285
+msgid "Bulk Actions"
+msgstr "批量操作"
+
+#: includes/class-alg-admin.php:286
+#: includes/class-alg-admin.php:354
+msgid "Delete"
+msgstr "删除"
+
+#: includes/class-alg-admin.php:289
+msgid "Apply"
+msgstr "应用"
+
+#: includes/class-alg-admin.php:311
+msgid "Creation Time"
+msgstr "创建时间"
+
+#: includes/class-alg-admin.php:312
 msgid "Actions"
 msgstr "操作"
 
-#: includes/class-alg-admin.php:347
-msgid "Edit"
-msgstr "编辑"
-
-#: includes/class-alg-admin.php:339
-msgid "Save"
-msgstr "保存"
-
-#: includes/class-alg-admin.php:313
+#: includes/class-alg-admin.php:317
 msgid "No keywords found"
 msgstr "未找到关键词"
 
-#: includes/class-alg-admin.php:85 includes/class-alg-admin.php:342
-msgid "Cancel"
-msgstr "取消"
+#: includes/class-alg-admin.php:343
+msgid "Save"
+msgstr "保存"
 
-#: includes/class-alg-api.php:164
+#: includes/class-alg-admin.php:351
+msgid "Edit"
+msgstr "编辑"
+
+#: includes/class-alg-api.php:122
+msgid "Invalid nonce. Please refresh the page and try again."
+msgstr "无效的安全令牌，请刷新页面后重试。"
+
+#: includes/class-alg-api.php:188
 msgid "Settings saved"
 msgstr "设置已保存"
 
-#: includes/class-alg-api.php:170
+#: includes/class-alg-api.php:194
 msgid "Failed to save settings"
 msgstr "保存设置失败"
 
-#: includes/class-alg-api.php:176
+#: includes/class-alg-api.php:200
 msgid "Error occurred while saving settings: "
 msgstr "保存设置时发生错误："
 
-#: includes/class-alg-keywords.php:41 includes/class-alg-keywords.php:92
+#: includes/class-alg-api.php:247
+msgid "Keyword added successfully"
+msgstr "关键词添加成功"
+
+#: includes/class-alg-api.php:276
+msgid "Keyword updated successfully"
+msgstr "关键词更新成功"
+
+#: includes/class-alg-api.php:295
+msgid "Failed to delete keyword"
+msgstr "删除关键词失败"
+
+#: includes/class-alg-api.php:302
+msgid "Keyword deleted successfully"
+msgstr "关键词删除成功"
+
+#: includes/class-alg-api.php:318
+msgid "Invalid keyword IDs"
+msgstr "无效的关键词ID"
+
+#: includes/class-alg-api.php:329
+msgid "Failed to delete keywords"
+msgstr "删除关键词失败"
+
+#: includes/class-alg-api.php:336
+msgid "Keywords deleted successfully"
+msgstr "关键词删除成功"
+
+#: includes/class-alg-api.php:425
+msgid "Error occurred while getting excluded posts: "
+msgstr "获取排除文章时发生错误："
+
+#: includes/class-alg-api.php:483
+msgid "Invalid post"
+msgstr "无效的文章"
+
+#: includes/class-alg-api.php:513
+msgid "Post is already excluded"
+msgstr "文章已被排除"
+
+#: includes/class-alg-api.php:549
+msgid "Post excluded successfully"
+msgstr "文章排除成功"
+
+#: includes/class-alg-api.php:561
+msgid "Error occurred while excluding post: "
+msgstr "排除文章时发生错误："
+
+#: includes/class-alg-api.php:603
+msgid "Post removed from exclusion list"
+msgstr "文章已从排除列表中移除"
+
+#: includes/class-alg-api.php:610
+msgid "Failed to remove post from exclusion list"
+msgstr "从排除列表中移除文章失败"
+
+#: includes/class-alg-api.php:616
+msgid "Error occurred while removing excluded post: "
+msgstr "移除排除文章时发生错误："
+
+#. translators: %s: the post tag name
+#: includes/class-alg-content-processor.php:156
+#, php-format
+msgid "View all posts tagged \"%s\""
+msgstr "查看所有标记为"%s"的文章"
+
+#: includes/class-alg-keywords.php:41
+#: includes/class-alg-keywords.php:92
 msgid "Keyword already exists"
 msgstr "关键词已存在"
 
@@ -261,120 +398,6 @@ msgstr "保存失败，请重试"
 msgid "Keyword does not exist"
 msgstr "关键词不存在"
 
-#: includes/class-alg-keywords.php:110
+#: includes/class-alg-keywords.php:113
 msgid "Update failed, please try again"
 msgstr "更新失败，请重试"
-
-#. translators: %s: the post tag name
-#: includes/class-alg-content-processor.php:153
-#, php-format
-msgid "View all posts tagged \"%s\""
-msgstr "查看所有标记为\"%s\"的文章"
-
-#: includes/class-alg-admin.php:206
-msgid "No excluded posts"
-msgstr "没有排除的文章"
-
-#: includes/class-alg-admin.php:227 includes/class-alg-admin.php:361
-msgid "Previous"
-msgstr "上一页"
-
-#: includes/class-alg-admin.php:233 includes/class-alg-admin.php:367
-msgid "Next"
-msgstr "下一页"
-
-#: includes/class-alg-admin.php:259
-msgid "Adding..."
-msgstr "添加中..."
-
-#: includes/class-alg-admin.php:259
-msgid "Add Keyword"
-msgstr "添加关键词"
-
-#: includes/class-alg-admin.php:271
-msgid "Search keywords or links"
-msgstr "搜索关键词或链接"
-
-#: includes/class-alg-admin.php:307
-msgid "Creation Time"
-msgstr "创建时间"
-
-#: includes/class-alg-api.php:223
-msgid "Keyword added successfully"
-msgstr "关键词添加成功"
-
-#: includes/class-alg-api.php:252
-msgid "Keyword updated successfully"
-msgstr "关键词更新成功"
-
-#: includes/class-alg-api.php:271
-msgid "Failed to delete keyword"
-msgstr "删除关键词失败"
-
-#: includes/class-alg-api.php:278
-msgid "Keyword deleted successfully"
-msgstr "关键词删除成功"
-
-#: includes/class-alg-api.php:294
-msgid "Invalid keyword IDs"
-msgstr "无效的关键词ID"
-
-#: includes/class-alg-api.php:305
-msgid "Failed to delete keywords"
-msgstr "删除关键词失败"
-
-#: includes/class-alg-api.php:312
-msgid "Keywords deleted successfully"
-msgstr "关键词删除成功"
-
-#: includes/class-alg-api.php:401
-msgid "Error occurred while getting excluded posts: "
-msgstr "获取排除文章时发生错误："
-
-#: includes/class-alg-api.php:459
-msgid "Invalid post"
-msgstr "无效的文章"
-
-#: includes/class-alg-api.php:489
-msgid "Post is already excluded"
-msgstr "文章已被排除"
-
-#: includes/class-alg-api.php:525
-msgid "Post excluded successfully"
-msgstr "文章排除成功"
-
-#: includes/class-alg-api.php:537
-msgid "Error occurred while excluding post: "
-msgstr "排除文章时发生错误："
-
-#: includes/class-alg-api.php:579
-msgid "Post removed from exclusion list"
-msgstr "文章已从排除列表中移除"
-
-#: includes/class-alg-api.php:586
-msgid "Failed to remove post from exclusion list"
-msgstr "从排除列表中移除文章失败"
-
-#: includes/class-alg-api.php:592
-msgid "Error occurred while removing excluded post: "
-msgstr "移除排除文章时发生错误："
-
-#: includes/class-alg-admin.php:83
-msgid "Confirm Action"
-msgstr "确认操作"
-
-#: auto-link-generator.php:61
-msgid "Settings"
-msgstr "设置"
-
-#: includes/class-alg-admin.php:84
-msgid "OK"
-msgstr "确定"
-
-#: auto-link-generator.php:67
-msgid "Documentation"
-msgstr "文档"
-
-#: auto-link-generator.php:68
-msgid "Support"
-msgstr "支持"

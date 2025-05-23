@@ -104,7 +104,27 @@ class ALG_API
      */
     public function permissions_check($request)
     {
-        return current_user_can('manage_options');
+        // Check if user has manage_options capability
+        if (!current_user_can('manage_options')) {
+            return false;
+        }
+
+        // Verify nonce for security
+        $nonce = $request->get_header('X-WP-Nonce');
+        if (empty($nonce)) {
+            // Also check if nonce is in request parameters (fallback)
+            $nonce = $request->get_param('_wpnonce');
+        }
+
+        if (empty($nonce) || !wp_verify_nonce($nonce, 'wp_rest')) {
+            return new WP_Error(
+                'rest_nonce_invalid',
+                __('Invalid nonce. Please refresh the page and try again.', 'auto-link-generator'),
+                array('status' => 403)
+            );
+        }
+
+        return true;
     }
 
     /**

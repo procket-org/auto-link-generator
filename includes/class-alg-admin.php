@@ -100,6 +100,7 @@ class ALG_Admin {
                 'confirm_remove_post' => __('Are you sure you want to remove this post from the exclusion list?', 'auto-link-generator'),
                 'no_search_result' => __('No matching posts found', 'auto-link-generator'),
                 'please_enter_title' => __('Please enter post title to search', 'auto-link-generator'),
+                'nonce_invalid' => __('Security verification failed. Please refresh the page and try again.', 'auto-link-generator'),
             ),
         ));
     }

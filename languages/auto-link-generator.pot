@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-23T22:33:21+08:00\n"
+"POT-Creation-Date: 2025-05-23T23:49:49+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: auto-link-generator\n"
@@ -52,7 +52,7 @@ msgid "Support"
 msgstr ""
 
 #: includes/class-alg-admin.php:26
-#: includes/class-alg-admin.php:114
+#: includes/class-alg-admin.php:115
 msgid "Auto Link Settings"
 msgstr ""
 
@@ -69,7 +69,7 @@ msgid "OK"
 msgstr ""
 
 #: includes/class-alg-admin.php:85
-#: includes/class-alg-admin.php:345
+#: includes/class-alg-admin.php:346
 msgid "Cancel"
 msgstr ""
 
@@ -124,7 +124,7 @@ msgid "Post search failed"
 msgstr ""
 
 #: includes/class-alg-admin.php:98
-#: includes/class-alg-api.php:535
+#: includes/class-alg-api.php:555
 msgid "Failed to exclude post"
 msgstr ""
 
@@ -144,229 +144,237 @@ msgstr ""
 msgid "Please enter post title to search"
 msgstr ""
 
-#: includes/class-alg-admin.php:118
+#: includes/class-alg-admin.php:103
+msgid "Security verification failed. Please refresh the page and try again."
+msgstr ""
+
+#: includes/class-alg-admin.php:119
 msgid "Global Settings"
 msgstr ""
 
-#: includes/class-alg-admin.php:126
+#: includes/class-alg-admin.php:127
 msgid "Automatic Tag Matching"
 msgstr ""
 
-#: includes/class-alg-admin.php:131
+#: includes/class-alg-admin.php:132
 msgid "Enable automatic tag matching feature"
 msgstr ""
 
-#: includes/class-alg-admin.php:137
+#: includes/class-alg-admin.php:138
 msgid "Case Sensitive"
 msgstr ""
 
-#: includes/class-alg-admin.php:142
+#: includes/class-alg-admin.php:143
 msgid "Enable case sensitive matching"
 msgstr ""
 
-#: includes/class-alg-admin.php:148
+#: includes/class-alg-admin.php:149
 msgid "Maximum Links"
 msgstr ""
 
-#: includes/class-alg-admin.php:152
+#: includes/class-alg-admin.php:153
 msgid "Maximum number of links to replace per article, set to 0 for unlimited"
 msgstr ""
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Saving..."
 msgstr ""
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Save Global Settings"
 msgstr ""
 
-#: includes/class-alg-admin.php:163
+#: includes/class-alg-admin.php:164
 msgid "Excluded Posts"
 msgstr ""
 
-#: includes/class-alg-admin.php:164
+#: includes/class-alg-admin.php:165
 msgid "Posts in this list will not have automatically generated links"
 msgstr ""
 
-#: includes/class-alg-admin.php:173
+#: includes/class-alg-admin.php:174
 msgid "Enter keywords to search posts"
 msgstr ""
 
-#: includes/class-alg-admin.php:185
+#: includes/class-alg-admin.php:186
 msgid "Excluded Posts List"
 msgstr ""
 
-#: includes/class-alg-admin.php:189
-#: includes/class-alg-admin.php:295
+#: includes/class-alg-admin.php:190
+#: includes/class-alg-admin.php:296
 msgid "items/page"
 msgstr ""
 
-#: includes/class-alg-admin.php:199
+#: includes/class-alg-admin.php:200
 msgid "Post Title"
 msgstr ""
 
-#: includes/class-alg-admin.php:200
+#: includes/class-alg-admin.php:201
 msgid "Exclusion Time"
 msgstr ""
 
-#: includes/class-alg-admin.php:201
+#: includes/class-alg-admin.php:202
 msgid "Action"
 msgstr ""
 
-#: includes/class-alg-admin.php:206
+#: includes/class-alg-admin.php:207
 msgid "No excluded posts"
 msgstr ""
 
-#: includes/class-alg-admin.php:217
+#: includes/class-alg-admin.php:218
 msgid "Remove"
 msgstr ""
 
-#: includes/class-alg-admin.php:227
-#: includes/class-alg-admin.php:364
+#: includes/class-alg-admin.php:228
+#: includes/class-alg-admin.php:365
 msgid "Previous"
 msgstr ""
 
-#: includes/class-alg-admin.php:233
-#: includes/class-alg-admin.php:370
+#: includes/class-alg-admin.php:234
+#: includes/class-alg-admin.php:371
 msgid "Next"
 msgstr ""
 
-#: includes/class-alg-admin.php:243
+#: includes/class-alg-admin.php:244
 msgid "Keyword Management"
 msgstr ""
 
-#: includes/class-alg-admin.php:250
-#: includes/class-alg-admin.php:308
+#: includes/class-alg-admin.php:251
+#: includes/class-alg-admin.php:309
 msgid "Keyword"
 msgstr ""
 
-#: includes/class-alg-admin.php:254
-#: includes/class-alg-admin.php:309
+#: includes/class-alg-admin.php:255
+#: includes/class-alg-admin.php:310
 msgid "Link URL"
 msgstr ""
 
-#: includes/class-alg-admin.php:259
+#: includes/class-alg-admin.php:260
 msgid "Adding..."
 msgstr ""
 
-#: includes/class-alg-admin.php:259
+#: includes/class-alg-admin.php:260
 msgid "Add Keyword"
 msgstr ""
 
-#: includes/class-alg-admin.php:269
+#: includes/class-alg-admin.php:270
 msgid "Keyword List"
 msgstr ""
 
-#: includes/class-alg-admin.php:272
+#: includes/class-alg-admin.php:273
 msgid "Search keywords or links"
 msgstr ""
 
-#: includes/class-alg-admin.php:276
+#: includes/class-alg-admin.php:277
 msgid "Search"
 msgstr ""
 
-#: includes/class-alg-admin.php:284
+#: includes/class-alg-admin.php:285
 msgid "Bulk Actions"
 msgstr ""
 
-#: includes/class-alg-admin.php:285
-#: includes/class-alg-admin.php:353
+#: includes/class-alg-admin.php:286
+#: includes/class-alg-admin.php:354
 msgid "Delete"
 msgstr ""
 
-#: includes/class-alg-admin.php:288
+#: includes/class-alg-admin.php:289
 msgid "Apply"
 msgstr ""
 
-#: includes/class-alg-admin.php:310
+#: includes/class-alg-admin.php:311
 msgid "Creation Time"
 msgstr ""
 
-#: includes/class-alg-admin.php:311
+#: includes/class-alg-admin.php:312
 msgid "Actions"
 msgstr ""
 
-#: includes/class-alg-admin.php:316
+#: includes/class-alg-admin.php:317
 msgid "No keywords found"
 msgstr ""
 
-#: includes/class-alg-admin.php:342
+#: includes/class-alg-admin.php:343
 msgid "Save"
 msgstr ""
 
-#: includes/class-alg-admin.php:350
+#: includes/class-alg-admin.php:351
 msgid "Edit"
 msgstr ""
 
-#: includes/class-alg-api.php:168
+#: includes/class-alg-api.php:122
+msgid "Invalid nonce. Please refresh the page and try again."
+msgstr ""
+
+#: includes/class-alg-api.php:188
 msgid "Settings saved"
 msgstr ""
 
-#: includes/class-alg-api.php:174
+#: includes/class-alg-api.php:194
 msgid "Failed to save settings"
 msgstr ""
 
-#: includes/class-alg-api.php:180
+#: includes/class-alg-api.php:200
 msgid "Error occurred while saving settings: "
 msgstr ""
 
-#: includes/class-alg-api.php:227
+#: includes/class-alg-api.php:247
 msgid "Keyword added successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:256
+#: includes/class-alg-api.php:276
 msgid "Keyword updated successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:275
+#: includes/class-alg-api.php:295
 msgid "Failed to delete keyword"
 msgstr ""
 
-#: includes/class-alg-api.php:282
+#: includes/class-alg-api.php:302
 msgid "Keyword deleted successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:298
+#: includes/class-alg-api.php:318
 msgid "Invalid keyword IDs"
 msgstr ""
 
-#: includes/class-alg-api.php:309
+#: includes/class-alg-api.php:329
 msgid "Failed to delete keywords"
 msgstr ""
 
-#: includes/class-alg-api.php:316
+#: includes/class-alg-api.php:336
 msgid "Keywords deleted successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:405
+#: includes/class-alg-api.php:425
 msgid "Error occurred while getting excluded posts: "
 msgstr ""
 
-#: includes/class-alg-api.php:463
+#: includes/class-alg-api.php:483
 msgid "Invalid post"
 msgstr ""
 
-#: includes/class-alg-api.php:493
+#: includes/class-alg-api.php:513
 msgid "Post is already excluded"
 msgstr ""
 
-#: includes/class-alg-api.php:529
+#: includes/class-alg-api.php:549
 msgid "Post excluded successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:541
+#: includes/class-alg-api.php:561
 msgid "Error occurred while excluding post: "
 msgstr ""
 
-#: includes/class-alg-api.php:583
+#: includes/class-alg-api.php:603
 msgid "Post removed from exclusion list"
 msgstr ""
 
-#: includes/class-alg-api.php:590
+#: includes/class-alg-api.php:610
 msgid "Failed to remove post from exclusion list"
 msgstr ""
 
-#: includes/class-alg-api.php:596
+#: includes/class-alg-api.php:616
 msgid "Error occurred while removing excluded post: "
 msgstr ""
 

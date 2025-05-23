@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto Link Generator 3.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-15T21:03:31+08:00\n"
-"PO-Revision-Date: 2025-05-18 18:34+0800\n"
+"Project-Id-Version: Auto Link Generator 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/auto-link-generator\n"
+"POT-Creation-Date: 2025-05-23T23:49:49+08:00\n"
+"PO-Revision-Date: 2025-05-24 00:00+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -22,20 +22,58 @@ msgid "Auto Link Generator"
 msgstr "Auto Link Generator"
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: auto-link-generator.php
-msgid "https://github.com/procket-org"
+msgid "https://procket-org.github.io/auto-link-generator/"
 msgstr ""
 
 #. Description of the plugin
 #: auto-link-generator.php
 msgid "Automatically generate internal links based on keywords and tags, with admin panel support"
-msgstr "Automatische Generierung interner Links auf Basis von Schlüsselwörtern und Tags, mit Unterstützung für Admin-Panel"
+msgstr "Automatische Generierung interner Links basierend auf Schlüsselwörtern und Tags, mit Admin-Panel-Unterstützung"
 
 #. Author of the plugin
 #: auto-link-generator.php
 msgid "tony"
 msgstr "tony"
+
+#. Author URI of the plugin
+#: auto-link-generator.php
+msgid "https://github.com/procket-org"
+msgstr ""
+
+#: auto-link-generator.php:61
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: auto-link-generator.php:70
+msgid "Documentation"
+msgstr "Dokumentation"
+
+#: auto-link-generator.php:71
+msgid "Support"
+msgstr "Support"
+
+#: includes/class-alg-admin.php:26
+#: includes/class-alg-admin.php:115
+msgid "Auto Link Settings"
+msgstr "Auto Link Einstellungen"
+
+#: includes/class-alg-admin.php:27
+msgid "Auto Link"
+msgstr "Auto Link"
+
+#: includes/class-alg-admin.php:83
+msgid "Confirm Action"
+msgstr "Aktion bestätigen"
+
+#: includes/class-alg-admin.php:84
+msgid "OK"
+msgstr "OK"
+
+#: includes/class-alg-admin.php:85
+#: includes/class-alg-admin.php:346
+msgid "Cancel"
+msgstr "Abbrechen"
 
 #: includes/class-alg-admin.php:86
 msgid "Settings saved successfully"
@@ -61,7 +99,8 @@ msgstr "Aktualisierung fehlgeschlagen"
 msgid "Delete failed"
 msgstr "Löschen fehlgeschlagen"
 
-#: includes/class-alg-admin.php:92 includes/class-alg-keywords.php:29
+#: includes/class-alg-admin.php:92
+#: includes/class-alg-keywords.php:29
 #: includes/class-alg-keywords.php:75
 msgid "Keyword and link URL cannot be empty"
 msgstr "Schlüsselwort und Link-URL dürfen nicht leer sein"
@@ -72,7 +111,7 @@ msgstr "Sind Sie sicher, dass Sie dieses Schlüsselwort löschen möchten?"
 
 #: includes/class-alg-admin.php:94
 msgid "Please select keywords to delete"
-msgstr "Bitte wählen Sie die zu löschenden Schlüsselwörter aus"
+msgstr "Bitte wählen Sie Schlüsselwörter zum Löschen aus"
 
 #: includes/class-alg-admin.php:95
 msgid "Are you sure you want to delete the selected keywords?"
@@ -86,17 +125,18 @@ msgstr "Suche fehlgeschlagen"
 msgid "Post search failed"
 msgstr "Beitragssuche fehlgeschlagen"
 
-#: includes/class-alg-admin.php:98 includes/class-alg-api.php:531
+#: includes/class-alg-admin.php:98
+#: includes/class-alg-api.php:555
 msgid "Failed to exclude post"
 msgstr "Beitrag konnte nicht ausgeschlossen werden"
 
 #: includes/class-alg-admin.php:99
 msgid "Failed to remove from exclusion list"
-msgstr "Konnte nicht aus der Ausschlussliste entfernt werden"
+msgstr "Entfernung aus der Ausschlussliste fehlgeschlagen"
 
 #: includes/class-alg-admin.php:100
 msgid "Are you sure you want to remove this post from the exclusion list?"
-msgstr "Sind Sie sicher, dass Sie diesen Beitrag von der Ausschlussliste entfernen möchten?"
+msgstr "Sind Sie sicher, dass Sie diesen Beitrag aus der Ausschlussliste entfernen möchten?"
 
 #: includes/class-alg-admin.php:101
 msgid "No matching posts found"
@@ -104,153 +144,250 @@ msgstr "Keine passenden Beiträge gefunden"
 
 #: includes/class-alg-admin.php:102
 msgid "Please enter post title to search"
-msgstr "Bitte geben Sie einen Beitragstitel zur Suche ein"
+msgstr "Bitte geben Sie einen Beitragstitel zum Suchen ein"
 
-#: includes/class-alg-admin.php:26 includes/class-alg-admin.php:114
-msgid "Auto Link Settings"
-msgstr "Auto Link Einstellungen"
+#: includes/class-alg-admin.php:103
+msgid "Security verification failed. Please refresh the page and try again."
+msgstr "Sicherheitsüberprüfung fehlgeschlagen. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut."
 
-#: includes/class-alg-admin.php:27
-msgid "Auto Link"
-msgstr "Auto Link"
-
-#: includes/class-alg-admin.php:118
+#: includes/class-alg-admin.php:119
 msgid "Global Settings"
 msgstr "Globale Einstellungen"
 
-#: includes/class-alg-admin.php:126
+#: includes/class-alg-admin.php:127
 msgid "Automatic Tag Matching"
 msgstr "Automatische Tag-Zuordnung"
 
-#: includes/class-alg-admin.php:131
+#: includes/class-alg-admin.php:132
 msgid "Enable automatic tag matching feature"
 msgstr "Automatische Tag-Zuordnungsfunktion aktivieren"
 
-#: includes/class-alg-admin.php:137
+#: includes/class-alg-admin.php:138
 msgid "Case Sensitive"
 msgstr "Groß-/Kleinschreibung beachten"
 
-#: includes/class-alg-admin.php:142
+#: includes/class-alg-admin.php:143
 msgid "Enable case sensitive matching"
-msgstr "Groß-/Kleinschreibung beim Abgleich beachten"
+msgstr "Groß-/Kleinschreibung bei der Zuordnung beachten"
 
-#: includes/class-alg-admin.php:148
+#: includes/class-alg-admin.php:149
 msgid "Maximum Links"
-msgstr "Maximale Links"
+msgstr "Maximale Anzahl Links"
 
-#: includes/class-alg-admin.php:152
+#: includes/class-alg-admin.php:153
 msgid "Maximum number of links to replace per article, set to 0 for unlimited"
-msgstr "Maximale Anzahl an Links pro Artikel, 0 für unbegrenzt"
+msgstr "Maximale Anzahl von Links, die pro Artikel ersetzt werden sollen, 0 für unbegrenzt"
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Saving..."
-msgstr "Wird gespeichert..."
+msgstr "Speichern..."
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Save Global Settings"
 msgstr "Globale Einstellungen speichern"
 
-#: includes/class-alg-admin.php:163
+#: includes/class-alg-admin.php:164
 msgid "Excluded Posts"
 msgstr "Ausgeschlossene Beiträge"
 
-#: includes/class-alg-admin.php:164
+#: includes/class-alg-admin.php:165
 msgid "Posts in this list will not have automatically generated links"
-msgstr "Beiträge in dieser Liste erhalten keine automatisch generierten Links"
+msgstr "Beiträge in dieser Liste haben keine automatisch generierten Links"
 
-#: includes/class-alg-admin.php:173
+#: includes/class-alg-admin.php:174
 msgid "Enter keywords to search posts"
-msgstr "Geben Sie Schlüsselwörter ein, um Beiträge zu suchen"
+msgstr "Schlüsselwörter eingeben, um Beiträge zu suchen"
 
-#: includes/class-alg-admin.php:185
+#: includes/class-alg-admin.php:186
 msgid "Excluded Posts List"
 msgstr "Liste ausgeschlossener Beiträge"
 
-#: includes/class-alg-admin.php:189 includes/class-alg-admin.php:292
+#: includes/class-alg-admin.php:190
+#: includes/class-alg-admin.php:296
 msgid "items/page"
-msgstr "Einträge/Seite"
+msgstr "Elemente/Seite"
 
-#: includes/class-alg-admin.php:199
+#: includes/class-alg-admin.php:200
 msgid "Post Title"
 msgstr "Beitragstitel"
 
-#: includes/class-alg-admin.php:200
+#: includes/class-alg-admin.php:201
 msgid "Exclusion Time"
 msgstr "Ausschlusszeit"
 
-#: includes/class-alg-admin.php:201
+#: includes/class-alg-admin.php:202
 msgid "Action"
 msgstr "Aktion"
 
-#: includes/class-alg-admin.php:217
+#: includes/class-alg-admin.php:207
+msgid "No excluded posts"
+msgstr "Keine ausgeschlossenen Beiträge"
+
+#: includes/class-alg-admin.php:218
 msgid "Remove"
 msgstr "Entfernen"
 
-#: includes/class-alg-admin.php:243
-msgid "Keyword Management"
-msgstr "Schlüsselwortverwaltung"
+#: includes/class-alg-admin.php:228
+#: includes/class-alg-admin.php:365
+msgid "Previous"
+msgstr "Vorherige"
 
-#: includes/class-alg-admin.php:250 includes/class-alg-admin.php:305
+#: includes/class-alg-admin.php:234
+#: includes/class-alg-admin.php:371
+msgid "Next"
+msgstr "Nächste"
+
+#: includes/class-alg-admin.php:244
+msgid "Keyword Management"
+msgstr "Schlüsselwort-Verwaltung"
+
+#: includes/class-alg-admin.php:251
+#: includes/class-alg-admin.php:309
 msgid "Keyword"
 msgstr "Schlüsselwort"
 
-#: includes/class-alg-admin.php:254 includes/class-alg-admin.php:306
+#: includes/class-alg-admin.php:255
+#: includes/class-alg-admin.php:310
 msgid "Link URL"
 msgstr "Link-URL"
 
-#: includes/class-alg-admin.php:269
+#: includes/class-alg-admin.php:260
+msgid "Adding..."
+msgstr "Hinzufügen..."
+
+#: includes/class-alg-admin.php:260
+msgid "Add Keyword"
+msgstr "Schlüsselwort hinzufügen"
+
+#: includes/class-alg-admin.php:270
 msgid "Keyword List"
-msgstr "Schlüsselwortliste"
-
-#: includes/class-alg-admin.php:281
-msgid "Bulk Actions"
-msgstr "Massenaktionen"
-
-#: includes/class-alg-admin.php:282 includes/class-alg-admin.php:350
-msgid "Delete"
-msgstr "Löschen"
-
-#: includes/class-alg-admin.php:285
-msgid "Apply"
-msgstr "Anwenden"
+msgstr "Schlüsselwort-Liste"
 
 #: includes/class-alg-admin.php:273
+msgid "Search keywords or links"
+msgstr "Schlüsselwörter oder Links suchen"
+
+#: includes/class-alg-admin.php:277
 msgid "Search"
 msgstr "Suchen"
 
-#: includes/class-alg-admin.php:308
+#: includes/class-alg-admin.php:285
+msgid "Bulk Actions"
+msgstr "Massenaktionen"
+
+#: includes/class-alg-admin.php:286
+#: includes/class-alg-admin.php:354
+msgid "Delete"
+msgstr "Löschen"
+
+#: includes/class-alg-admin.php:289
+msgid "Apply"
+msgstr "Anwenden"
+
+#: includes/class-alg-admin.php:311
+msgid "Creation Time"
+msgstr "Erstellungszeit"
+
+#: includes/class-alg-admin.php:312
 msgid "Actions"
 msgstr "Aktionen"
 
-#: includes/class-alg-admin.php:347
-msgid "Edit"
-msgstr "Bearbeiten"
-
-#: includes/class-alg-admin.php:339
-msgid "Save"
-msgstr "Speichern"
-
-#: includes/class-alg-admin.php:313
+#: includes/class-alg-admin.php:317
 msgid "No keywords found"
 msgstr "Keine Schlüsselwörter gefunden"
 
-#: includes/class-alg-admin.php:85 includes/class-alg-admin.php:342
-msgid "Cancel"
-msgstr "Abbrechen"
+#: includes/class-alg-admin.php:343
+msgid "Save"
+msgstr "Speichern"
 
-#: includes/class-alg-api.php:164
+#: includes/class-alg-admin.php:351
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: includes/class-alg-api.php:122
+msgid "Invalid nonce. Please refresh the page and try again."
+msgstr "Ungültige Nonce. Bitte aktualisieren Sie die Seite und versuchen Sie es erneut."
+
+#: includes/class-alg-api.php:188
 msgid "Settings saved"
 msgstr "Einstellungen gespeichert"
 
-#: includes/class-alg-api.php:170
+#: includes/class-alg-api.php:194
 msgid "Failed to save settings"
-msgstr "Fehler beim Speichern der Einstellungen"
+msgstr "Einstellungen konnten nicht gespeichert werden"
 
-#: includes/class-alg-api.php:176
+#: includes/class-alg-api.php:200
 msgid "Error occurred while saving settings: "
 msgstr "Fehler beim Speichern der Einstellungen: "
 
-#: includes/class-alg-keywords.php:41 includes/class-alg-keywords.php:92
+#: includes/class-alg-api.php:247
+msgid "Keyword added successfully"
+msgstr "Schlüsselwort erfolgreich hinzugefügt"
+
+#: includes/class-alg-api.php:276
+msgid "Keyword updated successfully"
+msgstr "Schlüsselwort erfolgreich aktualisiert"
+
+#: includes/class-alg-api.php:295
+msgid "Failed to delete keyword"
+msgstr "Schlüsselwort konnte nicht gelöscht werden"
+
+#: includes/class-alg-api.php:302
+msgid "Keyword deleted successfully"
+msgstr "Schlüsselwort erfolgreich gelöscht"
+
+#: includes/class-alg-api.php:318
+msgid "Invalid keyword IDs"
+msgstr "Ungültige Schlüsselwort-IDs"
+
+#: includes/class-alg-api.php:329
+msgid "Failed to delete keywords"
+msgstr "Schlüsselwörter konnten nicht gelöscht werden"
+
+#: includes/class-alg-api.php:336
+msgid "Keywords deleted successfully"
+msgstr "Schlüsselwörter erfolgreich gelöscht"
+
+#: includes/class-alg-api.php:425
+msgid "Error occurred while getting excluded posts: "
+msgstr "Fehler beim Abrufen ausgeschlossener Beiträge: "
+
+#: includes/class-alg-api.php:483
+msgid "Invalid post"
+msgstr "Ungültiger Beitrag"
+
+#: includes/class-alg-api.php:513
+msgid "Post is already excluded"
+msgstr "Beitrag ist bereits ausgeschlossen"
+
+#: includes/class-alg-api.php:549
+msgid "Post excluded successfully"
+msgstr "Beitrag erfolgreich ausgeschlossen"
+
+#: includes/class-alg-api.php:561
+msgid "Error occurred while excluding post: "
+msgstr "Fehler beim Ausschließen des Beitrags: "
+
+#: includes/class-alg-api.php:603
+msgid "Post removed from exclusion list"
+msgstr "Beitrag aus der Ausschlussliste entfernt"
+
+#: includes/class-alg-api.php:610
+msgid "Failed to remove post from exclusion list"
+msgstr "Beitrag konnte nicht aus der Ausschlussliste entfernt werden"
+
+#: includes/class-alg-api.php:616
+msgid "Error occurred while removing excluded post: "
+msgstr "Fehler beim Entfernen des ausgeschlossenen Beitrags: "
+
+#. translators: %s: the post tag name
+#: includes/class-alg-content-processor.php:156
+#, php-format
+msgid "View all posts tagged \"%s\""
+msgstr "Alle mit \"%s\" getaggten Beiträge anzeigen"
+
+#: includes/class-alg-keywords.php:41
+#: includes/class-alg-keywords.php:92
 msgid "Keyword already exists"
 msgstr "Schlüsselwort existiert bereits"
 
@@ -262,120 +399,6 @@ msgstr "Speichern fehlgeschlagen, bitte versuchen Sie es erneut"
 msgid "Keyword does not exist"
 msgstr "Schlüsselwort existiert nicht"
 
-#: includes/class-alg-keywords.php:110
+#: includes/class-alg-keywords.php:113
 msgid "Update failed, please try again"
 msgstr "Aktualisierung fehlgeschlagen, bitte versuchen Sie es erneut"
-
-#. translators: %s: the post tag name
-#: includes/class-alg-content-processor.php:153
-#, php-format
-msgid "View all posts tagged \"%s\""
-msgstr "Alle Beiträge mit dem Tag \"%s\" anzeigen"
-
-#: includes/class-alg-admin.php:206
-msgid "No excluded posts"
-msgstr "Keine ausgeschlossenen Beiträge"
-
-#: includes/class-alg-admin.php:227 includes/class-alg-admin.php:361
-msgid "Previous"
-msgstr "Vorherige"
-
-#: includes/class-alg-admin.php:233 includes/class-alg-admin.php:367
-msgid "Next"
-msgstr "Nächste"
-
-#: includes/class-alg-admin.php:259
-msgid "Adding..."
-msgstr "Hinzufügen..."
-
-#: includes/class-alg-admin.php:259
-msgid "Add Keyword"
-msgstr "Schlüsselwort hinzufügen"
-
-#: includes/class-alg-admin.php:271
-msgid "Search keywords or links"
-msgstr "Schlüsselwörter oder Links suchen"
-
-#: includes/class-alg-admin.php:307
-msgid "Creation Time"
-msgstr "Erstellungszeit"
-
-#: includes/class-alg-api.php:223
-msgid "Keyword added successfully"
-msgstr "Schlüsselwort erfolgreich hinzugefügt"
-
-#: includes/class-alg-api.php:252
-msgid "Keyword updated successfully"
-msgstr "Schlüsselwort erfolgreich aktualisiert"
-
-#: includes/class-alg-api.php:271
-msgid "Failed to delete keyword"
-msgstr "Fehler beim Löschen des Schlüsselworts"
-
-#: includes/class-alg-api.php:278
-msgid "Keyword deleted successfully"
-msgstr "Schlüsselwort erfolgreich gelöscht"
-
-#: includes/class-alg-api.php:294
-msgid "Invalid keyword IDs"
-msgstr "Ungültige Schlüsselwort-IDs"
-
-#: includes/class-alg-api.php:305
-msgid "Failed to delete keywords"
-msgstr "Fehler beim Löschen der Schlüsselwörter"
-
-#: includes/class-alg-api.php:312
-msgid "Keywords deleted successfully"
-msgstr "Schlüsselwörter erfolgreich gelöscht"
-
-#: includes/class-alg-api.php:401
-msgid "Error occurred while getting excluded posts: "
-msgstr "Fehler beim Abrufen ausgeschlossener Beiträge: "
-
-#: includes/class-alg-api.php:459
-msgid "Invalid post"
-msgstr "Ungültiger Beitrag"
-
-#: includes/class-alg-api.php:489
-msgid "Post is already excluded"
-msgstr "Beitrag ist bereits ausgeschlossen"
-
-#: includes/class-alg-api.php:525
-msgid "Post excluded successfully"
-msgstr "Beitrag erfolgreich ausgeschlossen"
-
-#: includes/class-alg-api.php:537
-msgid "Error occurred while excluding post: "
-msgstr "Fehler beim Ausschließen des Beitrags: "
-
-#: includes/class-alg-api.php:579
-msgid "Post removed from exclusion list"
-msgstr "Beitrag von der Ausschlussliste entfernt"
-
-#: includes/class-alg-api.php:586
-msgid "Failed to remove post from exclusion list"
-msgstr "Fehler beim Entfernen des Beitrags von der Ausschlussliste"
-
-#: includes/class-alg-api.php:592
-msgid "Error occurred while removing excluded post: "
-msgstr "Fehler beim Entfernen des ausgeschlossenen Beitrags: "
-
-#: includes/class-alg-admin.php:83
-msgid "Confirm Action"
-msgstr "Aktion bestätigen"
-
-#: auto-link-generator.php:61
-msgid "Settings"
-msgstr "Einstellungen"
-
-#: includes/class-alg-admin.php:84
-msgid "OK"
-msgstr "OK"
-
-#: auto-link-generator.php:67
-msgid "Documentation"
-msgstr "Dokumentation"
-
-#: auto-link-generator.php:68
-msgid "Support"
-msgstr "Support"

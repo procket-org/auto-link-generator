@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto Link Generator 3.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-15T21:03:31+08:00\n"
-"PO-Revision-Date: 2025-05-18 18:35+0800\n"
+"Project-Id-Version: Auto Link Generator 2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/auto-link-generator\n"
+"POT-Creation-Date: 2025-05-23T23:49:49+08:00\n"
+"PO-Revision-Date: 2025-05-24 00:00+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ko_KR\n"
@@ -22,9 +22,8 @@ msgid "Auto Link Generator"
 msgstr "자동 링크 생성기"
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: auto-link-generator.php
-msgid "https://github.com/procket-org"
+msgid "https://procket-org.github.io/auto-link-generator/"
 msgstr ""
 
 #. Description of the plugin
@@ -36,6 +35,45 @@ msgstr "키워드와 태그를 기반으로 내부 링크를 자동 생성하며
 #: auto-link-generator.php
 msgid "tony"
 msgstr "tony"
+
+#. Author URI of the plugin
+#: auto-link-generator.php
+msgid "https://github.com/procket-org"
+msgstr ""
+
+#: auto-link-generator.php:61
+msgid "Settings"
+msgstr "설정"
+
+#: auto-link-generator.php:70
+msgid "Documentation"
+msgstr "문서"
+
+#: auto-link-generator.php:71
+msgid "Support"
+msgstr "지원"
+
+#: includes/class-alg-admin.php:26
+#: includes/class-alg-admin.php:115
+msgid "Auto Link Settings"
+msgstr "자동 링크 설정"
+
+#: includes/class-alg-admin.php:27
+msgid "Auto Link"
+msgstr "자동 링크"
+
+#: includes/class-alg-admin.php:83
+msgid "Confirm Action"
+msgstr "작업 확인"
+
+#: includes/class-alg-admin.php:84
+msgid "OK"
+msgstr "확인"
+
+#: includes/class-alg-admin.php:85
+#: includes/class-alg-admin.php:346
+msgid "Cancel"
+msgstr "취소"
 
 #: includes/class-alg-admin.php:86
 msgid "Settings saved successfully"
@@ -61,7 +99,8 @@ msgstr "업데이트 실패"
 msgid "Delete failed"
 msgstr "삭제 실패"
 
-#: includes/class-alg-admin.php:92 includes/class-alg-keywords.php:29
+#: includes/class-alg-admin.php:92
+#: includes/class-alg-keywords.php:29
 #: includes/class-alg-keywords.php:75
 msgid "Keyword and link URL cannot be empty"
 msgstr "키워드와 링크 URL은 비워둘 수 없습니다"
@@ -86,7 +125,8 @@ msgstr "검색 실패"
 msgid "Post search failed"
 msgstr "게시물 검색 실패"
 
-#: includes/class-alg-admin.php:98 includes/class-alg-api.php:531
+#: includes/class-alg-admin.php:98
+#: includes/class-alg-api.php:555
 msgid "Failed to exclude post"
 msgstr "게시물 제외 실패"
 
@@ -106,151 +146,248 @@ msgstr "일치하는 게시물을 찾을 수 없습니다"
 msgid "Please enter post title to search"
 msgstr "검색할 게시물 제목을 입력해 주세요"
 
-#: includes/class-alg-admin.php:26 includes/class-alg-admin.php:114
-msgid "Auto Link Settings"
-msgstr "자동 링크 설정"
+#: includes/class-alg-admin.php:103
+msgid "Security verification failed. Please refresh the page and try again."
+msgstr "보안 인증에 실패했습니다. 페이지를 새로고침하고 다시 시도해 주세요."
 
-#: includes/class-alg-admin.php:27
-msgid "Auto Link"
-msgstr "자동 링크"
-
-#: includes/class-alg-admin.php:118
+#: includes/class-alg-admin.php:119
 msgid "Global Settings"
 msgstr "전역 설정"
 
-#: includes/class-alg-admin.php:126
+#: includes/class-alg-admin.php:127
 msgid "Automatic Tag Matching"
 msgstr "자동 태그 매칭"
 
-#: includes/class-alg-admin.php:131
+#: includes/class-alg-admin.php:132
 msgid "Enable automatic tag matching feature"
 msgstr "자동 태그 매칭 기능 활성화"
 
-#: includes/class-alg-admin.php:137
+#: includes/class-alg-admin.php:138
 msgid "Case Sensitive"
 msgstr "대소문자 구분"
 
-#: includes/class-alg-admin.php:142
+#: includes/class-alg-admin.php:143
 msgid "Enable case sensitive matching"
 msgstr "대소문자 구분 매칭 활성화"
 
-#: includes/class-alg-admin.php:148
+#: includes/class-alg-admin.php:149
 msgid "Maximum Links"
 msgstr "최대 링크 수"
 
-#: includes/class-alg-admin.php:152
+#: includes/class-alg-admin.php:153
 msgid "Maximum number of links to replace per article, set to 0 for unlimited"
 msgstr "글당 대체할 최대 링크 수, 무제한은 0으로 설정"
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Saving..."
 msgstr "저장 중..."
 
-#: includes/class-alg-admin.php:157
+#: includes/class-alg-admin.php:158
 msgid "Save Global Settings"
 msgstr "전역 설정 저장"
 
-#: includes/class-alg-admin.php:163
+#: includes/class-alg-admin.php:164
 msgid "Excluded Posts"
 msgstr "제외된 게시물"
 
-#: includes/class-alg-admin.php:164
+#: includes/class-alg-admin.php:165
 msgid "Posts in this list will not have automatically generated links"
 msgstr "이 목록의 게시물은 자동 생성된 링크가 포함되지 않습니다"
 
-#: includes/class-alg-admin.php:173
+#: includes/class-alg-admin.php:174
 msgid "Enter keywords to search posts"
 msgstr "게시물을 검색할 키워드 입력"
 
-#: includes/class-alg-admin.php:185
+#: includes/class-alg-admin.php:186
 msgid "Excluded Posts List"
 msgstr "제외된 게시물 목록"
 
-#: includes/class-alg-admin.php:189 includes/class-alg-admin.php:292
+#: includes/class-alg-admin.php:190
+#: includes/class-alg-admin.php:296
 msgid "items/page"
 msgstr "항목/페이지"
 
-#: includes/class-alg-admin.php:199
+#: includes/class-alg-admin.php:200
 msgid "Post Title"
 msgstr "게시물 제목"
 
-#: includes/class-alg-admin.php:200
+#: includes/class-alg-admin.php:201
 msgid "Exclusion Time"
 msgstr "제외 시간"
 
-#: includes/class-alg-admin.php:201
+#: includes/class-alg-admin.php:202
 msgid "Action"
 msgstr "작업"
 
-#: includes/class-alg-admin.php:217
+#: includes/class-alg-admin.php:207
+msgid "No excluded posts"
+msgstr "제외된 게시물 없음"
+
+#: includes/class-alg-admin.php:218
 msgid "Remove"
 msgstr "제거"
 
-#: includes/class-alg-admin.php:243
+#: includes/class-alg-admin.php:228
+#: includes/class-alg-admin.php:365
+msgid "Previous"
+msgstr "이전"
+
+#: includes/class-alg-admin.php:234
+#: includes/class-alg-admin.php:371
+msgid "Next"
+msgstr "다음"
+
+#: includes/class-alg-admin.php:244
 msgid "Keyword Management"
 msgstr "키워드 관리"
 
-#: includes/class-alg-admin.php:250 includes/class-alg-admin.php:305
+#: includes/class-alg-admin.php:251
+#: includes/class-alg-admin.php:309
 msgid "Keyword"
 msgstr "키워드"
 
-#: includes/class-alg-admin.php:254 includes/class-alg-admin.php:306
+#: includes/class-alg-admin.php:255
+#: includes/class-alg-admin.php:310
 msgid "Link URL"
 msgstr "링크 URL"
 
-#: includes/class-alg-admin.php:269
+#: includes/class-alg-admin.php:260
+msgid "Adding..."
+msgstr "추가 중..."
+
+#: includes/class-alg-admin.php:260
+msgid "Add Keyword"
+msgstr "키워드 추가"
+
+#: includes/class-alg-admin.php:270
 msgid "Keyword List"
 msgstr "키워드 목록"
 
-#: includes/class-alg-admin.php:281
-msgid "Bulk Actions"
-msgstr "일괄 작업"
-
-#: includes/class-alg-admin.php:282 includes/class-alg-admin.php:350
-msgid "Delete"
-msgstr "삭제"
-
-#: includes/class-alg-admin.php:285
-msgid "Apply"
-msgstr "적용"
-
 #: includes/class-alg-admin.php:273
+msgid "Search keywords or links"
+msgstr "키워드 또는 링크 검색"
+
+#: includes/class-alg-admin.php:277
 msgid "Search"
 msgstr "검색"
 
-#: includes/class-alg-admin.php:308
+#: includes/class-alg-admin.php:285
+msgid "Bulk Actions"
+msgstr "일괄 작업"
+
+#: includes/class-alg-admin.php:286
+#: includes/class-alg-admin.php:354
+msgid "Delete"
+msgstr "삭제"
+
+#: includes/class-alg-admin.php:289
+msgid "Apply"
+msgstr "적용"
+
+#: includes/class-alg-admin.php:311
+msgid "Creation Time"
+msgstr "생성 시간"
+
+#: includes/class-alg-admin.php:312
 msgid "Actions"
 msgstr "작업"
 
-#: includes/class-alg-admin.php:347
-msgid "Edit"
-msgstr "편집"
-
-#: includes/class-alg-admin.php:339
-msgid "Save"
-msgstr "저장"
-
-#: includes/class-alg-admin.php:313
+#: includes/class-alg-admin.php:317
 msgid "No keywords found"
 msgstr "키워드를 찾을 수 없습니다"
 
-#: includes/class-alg-admin.php:85 includes/class-alg-admin.php:342
-msgid "Cancel"
-msgstr "취소"
+#: includes/class-alg-admin.php:343
+msgid "Save"
+msgstr "저장"
 
-#: includes/class-alg-api.php:164
+#: includes/class-alg-admin.php:351
+msgid "Edit"
+msgstr "편집"
+
+#: includes/class-alg-api.php:122
+msgid "Invalid nonce. Please refresh the page and try again."
+msgstr "잘못된 논스입니다. 페이지를 새로고침하고 다시 시도해 주세요."
+
+#: includes/class-alg-api.php:188
 msgid "Settings saved"
-msgstr "설정 저장됨"
+msgstr "설정이 저장되었습니다"
 
-#: includes/class-alg-api.php:170
+#: includes/class-alg-api.php:194
 msgid "Failed to save settings"
 msgstr "설정 저장 실패"
 
-#: includes/class-alg-api.php:176
+#: includes/class-alg-api.php:200
 msgid "Error occurred while saving settings: "
 msgstr "설정 저장 중 오류 발생: "
 
-#: includes/class-alg-keywords.php:41 includes/class-alg-keywords.php:92
+#: includes/class-alg-api.php:247
+msgid "Keyword added successfully"
+msgstr "키워드가 성공적으로 추가되었습니다"
+
+#: includes/class-alg-api.php:276
+msgid "Keyword updated successfully"
+msgstr "키워드가 성공적으로 업데이트되었습니다"
+
+#: includes/class-alg-api.php:295
+msgid "Failed to delete keyword"
+msgstr "키워드 삭제 실패"
+
+#: includes/class-alg-api.php:302
+msgid "Keyword deleted successfully"
+msgstr "키워드가 성공적으로 삭제되었습니다"
+
+#: includes/class-alg-api.php:318
+msgid "Invalid keyword IDs"
+msgstr "잘못된 키워드 ID"
+
+#: includes/class-alg-api.php:329
+msgid "Failed to delete keywords"
+msgstr "키워드 삭제 실패"
+
+#: includes/class-alg-api.php:336
+msgid "Keywords deleted successfully"
+msgstr "키워드가 성공적으로 삭제되었습니다"
+
+#: includes/class-alg-api.php:425
+msgid "Error occurred while getting excluded posts: "
+msgstr "제외된 게시물을 가져오는 중 오류 발생: "
+
+#: includes/class-alg-api.php:483
+msgid "Invalid post"
+msgstr "잘못된 게시물"
+
+#: includes/class-alg-api.php:513
+msgid "Post is already excluded"
+msgstr "게시물이 이미 제외되었습니다"
+
+#: includes/class-alg-api.php:549
+msgid "Post excluded successfully"
+msgstr "게시물이 성공적으로 제외되었습니다"
+
+#: includes/class-alg-api.php:561
+msgid "Error occurred while excluding post: "
+msgstr "게시물 제외 중 오류 발생: "
+
+#: includes/class-alg-api.php:603
+msgid "Post removed from exclusion list"
+msgstr "게시물이 제외 목록에서 제거되었습니다"
+
+#: includes/class-alg-api.php:610
+msgid "Failed to remove post from exclusion list"
+msgstr "제외 목록에서 게시물 제거 실패"
+
+#: includes/class-alg-api.php:616
+msgid "Error occurred while removing excluded post: "
+msgstr "제외된 게시물 제거 중 오류 발생: "
+
+#. translators: %s: the post tag name
+#: includes/class-alg-content-processor.php:156
+#, php-format
+msgid "View all posts tagged \"%s\""
+msgstr "\"%s\" 태그가 달린 모든 게시물 보기"
+
+#: includes/class-alg-keywords.php:41
+#: includes/class-alg-keywords.php:92
 msgid "Keyword already exists"
 msgstr "키워드가 이미 존재합니다"
 
@@ -262,120 +399,6 @@ msgstr "저장 실패, 다시 시도해 주세요"
 msgid "Keyword does not exist"
 msgstr "키워드가 존재하지 않습니다"
 
-#: includes/class-alg-keywords.php:110
+#: includes/class-alg-keywords.php:113
 msgid "Update failed, please try again"
 msgstr "업데이트 실패, 다시 시도해 주세요"
-
-#. translators: %s: the post tag name
-#: includes/class-alg-content-processor.php:153
-#, php-format
-msgid "View all posts tagged \"%s\""
-msgstr "\"%s\" 태그가 있는 모든 게시물 보기"
-
-#: includes/class-alg-admin.php:206
-msgid "No excluded posts"
-msgstr "제외된 게시물 없음"
-
-#: includes/class-alg-admin.php:227 includes/class-alg-admin.php:361
-msgid "Previous"
-msgstr "이전"
-
-#: includes/class-alg-admin.php:233 includes/class-alg-admin.php:367
-msgid "Next"
-msgstr "다음"
-
-#: includes/class-alg-admin.php:259
-msgid "Adding..."
-msgstr "추가 중..."
-
-#: includes/class-alg-admin.php:259
-msgid "Add Keyword"
-msgstr "키워드 추가"
-
-#: includes/class-alg-admin.php:271
-msgid "Search keywords or links"
-msgstr "키워드 또는 링크 검색"
-
-#: includes/class-alg-admin.php:307
-msgid "Creation Time"
-msgstr "생성 시간"
-
-#: includes/class-alg-api.php:223
-msgid "Keyword added successfully"
-msgstr "키워드가 성공적으로 추가되었습니다"
-
-#: includes/class-alg-api.php:252
-msgid "Keyword updated successfully"
-msgstr "키워드가 성공적으로 업데이트되었습니다"
-
-#: includes/class-alg-api.php:271
-msgid "Failed to delete keyword"
-msgstr "키워드 삭제 실패"
-
-#: includes/class-alg-api.php:278
-msgid "Keyword deleted successfully"
-msgstr "키워드가 성공적으로 삭제되었습니다"
-
-#: includes/class-alg-api.php:294
-msgid "Invalid keyword IDs"
-msgstr "유효하지 않은 키워드 ID"
-
-#: includes/class-alg-api.php:305
-msgid "Failed to delete keywords"
-msgstr "키워드 삭제 실패"
-
-#: includes/class-alg-api.php:312
-msgid "Keywords deleted successfully"
-msgstr "키워드가 성공적으로 삭제되었습니다"
-
-#: includes/class-alg-api.php:401
-msgid "Error occurred while getting excluded posts: "
-msgstr "제외된 게시물을 가져오는 중 오류 발생: "
-
-#: includes/class-alg-api.php:459
-msgid "Invalid post"
-msgstr "유효하지 않은 게시물"
-
-#: includes/class-alg-api.php:489
-msgid "Post is already excluded"
-msgstr "게시물이 이미 제외되었습니다"
-
-#: includes/class-alg-api.php:525
-msgid "Post excluded successfully"
-msgstr "게시물이 성공적으로 제외되었습니다"
-
-#: includes/class-alg-api.php:537
-msgid "Error occurred while excluding post: "
-msgstr "게시물 제외 중 오류 발생: "
-
-#: includes/class-alg-api.php:579
-msgid "Post removed from exclusion list"
-msgstr "게시물이 제외 목록에서 제거되었습니다"
-
-#: includes/class-alg-api.php:586
-msgid "Failed to remove post from exclusion list"
-msgstr "제외 목록에서 게시물 제거 실패"
-
-#: includes/class-alg-api.php:592
-msgid "Error occurred while removing excluded post: "
-msgstr "제외된 게시물을 제거하는 동안 오류가 발생했습니다: "
-
-#: includes/class-alg-admin.php:83
-msgid "Confirm Action"
-msgstr "작업 확인"
-
-#: auto-link-generator.php:61
-msgid "Settings"
-msgstr "설정"
-
-#: includes/class-alg-admin.php:84
-msgid "OK"
-msgstr "확인"
-
-#: auto-link-generator.php:67
-msgid "Documentation"
-msgstr "문서"
-
-#: auto-link-generator.php:68
-msgid "Support"
-msgstr "지원"

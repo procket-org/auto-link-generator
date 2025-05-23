@@ -76,6 +76,9 @@
                 this.currentPage = 1; // Ensure starting from the first page
                 this.postsCurrentPage = 1; 
                 this.loadSettings();
+                
+                // Setup global axios error handler for nonce validation
+                this.setupAxiosErrorHandler();
             },
             methods: {
                 /**
@@ -592,6 +595,26 @@
                 // Add handleSearchBlur method
                 handleSearchBlur: function() {
                     this.isSearchFocused = false;
+                },
+
+                /**
+                 * Setup global axios error handler for nonce validation
+                 */
+                setupAxiosErrorHandler: function() {
+                    axios.interceptors.response.use(
+                        response => response,
+                        error => {
+                            if (error.response && error.response.status === 403 && 
+                                error.response.data && error.response.data.code === 'rest_nonce_invalid') {
+                                this.showAlert(algData.i18n.nonce_invalid, 'error');
+                                // Optionally reload the page to get a fresh nonce
+                                setTimeout(() => {
+                                    window.location.reload();
+                                }, 2000);
+                            }
+                            return Promise.reject(error);
+                        }
+                    );
                 }
             }
         });
