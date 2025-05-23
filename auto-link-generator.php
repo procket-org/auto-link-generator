@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define constants
-define('ALG_VERSION', '3.0');
+define('ALG_VERSION', '2.0');
 define('ALG_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('ALG_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('ALG_PLUGIN_BASENAME', plugin_basename(__FILE__));
