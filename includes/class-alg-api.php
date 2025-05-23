@@ -341,7 +341,7 @@ class ALG_API
                         if (!empty($post_id) && is_numeric($post_id)) {
                             $formatted_excluded_posts[] = array(
                                 'post_id' => $post_id,
-                                'excluded_at' => date('Y-m-d H:i:s') // Use current time for old data
+                                'excluded_at' => gmdate('Y-m-d H:i:s') // Use current time for old data
                             );
                         }
                     }
@@ -353,7 +353,7 @@ class ALG_API
                         if (!empty($post['post_id']) && is_numeric($post['post_id'])) {
                             $excluded_at = isset($post['excluded_at']) && !empty($post['excluded_at'])
                                 ? $post['excluded_at']
-                                : date('Y-m-d H:i:s');
+                                : gmdate('Y-m-d H:i:s');
 
                             $formatted_excluded_posts[] = array(
                                 'post_id' => $post['post_id'],
@@ -495,7 +495,7 @@ class ALG_API
             }
 
             // Add to exclusion list with current time
-            $current_time = date('Y-m-d H:i:s');
+            $current_time = gmdate('Y-m-d H:i:s');
 
             // Convert old format
             if (isset($excluded_posts[0]) && !is_array($excluded_posts[0])) {

@@ -125,7 +125,7 @@ class ALG_Content_Processor {
         });
 
         // Get site domain
-        $site_host = parse_url(get_site_url(), PHP_URL_HOST);
+        $site_host = wp_parse_url(get_site_url(), PHP_URL_HOST);
 
         // Use regex to split HTML, separate HTML tags and text
         $html_parts = preg_split('/(<[^>]*>)/i', $html, -1, PREG_SPLIT_DELIM_CAPTURE);
@@ -164,7 +164,7 @@ class ALG_Content_Processor {
                 $link_attributes .= ' target="_blank"';
 
                 // Check if nofollow needed
-                $url_host = parse_url($url, PHP_URL_HOST);
+                $url_host = wp_parse_url($url, PHP_URL_HOST);
                 if ($this->should_add_nofollow($url, $url_host, $site_host)) {
                     $link_attributes .= ' rel="nofollow noopener noreferrer"';
                 } else {
@@ -340,8 +340,8 @@ class ALG_Content_Processor {
      */
     private function is_external_url($url) {
         $site_url = get_site_url();
-        $site_host = parse_url($site_url, PHP_URL_HOST);
-        $url_host = parse_url($url, PHP_URL_HOST);
+        $site_host = wp_parse_url($site_url, PHP_URL_HOST);
+        $url_host = wp_parse_url($url, PHP_URL_HOST);
 
         return $site_host !== $url_host;
     }

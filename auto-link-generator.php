@@ -76,11 +76,11 @@ add_filter('plugin_row_meta', 'alg_add_plugin_meta_links', 10, 2);
 
 function alg_enqueue_admin_scripts() {
     // SweetAlert2 dependencies
-    wp_enqueue_style('sweetalert2', 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css');
-    wp_enqueue_script('sweetalert2', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), null, true);
+    wp_enqueue_style('sweetalert2', plugins_url('assets/css/sweetalert2.min.css', __FILE__), array(), ALG_VERSION);
+    wp_enqueue_script('sweetalert2', plugins_url('assets/js/sweetalert2.min.js', __FILE__), array(), ALG_VERSION, true);
     
-    // Plugin's own styles and scripts
-    wp_enqueue_style('alg-admin-css', plugins_url('assets/css/admin.css', __FILE__));
-    wp_enqueue_script('alg-admin-js', plugins_url('assets/js/admin.js', __FILE__), array('vue', 'sweetalert2'), ALG_VERSION, true);
+    // Plugin's own styles and scripts with version
+    wp_enqueue_style('alg-admin-css', plugins_url('assets/css/admin.css', __FILE__), array(), ALG_VERSION);
+    wp_enqueue_script('alg-admin-js', plugins_url('assets/js/admin.js', __FILE__), array('jquery', 'sweetalert2'), ALG_VERSION, true);
 }
 add_action('admin_enqueue_scripts', 'alg_enqueue_admin_scripts');

@@ -43,7 +43,7 @@ class ALG_Admin {
         // Vue.js and other dependencies
         wp_enqueue_script(
             'vue',
-            'https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js',
+            ALG_PLUGIN_URL . 'assets/js/vue.min.js',
             array(),
             '2.6.14',
             true
@@ -51,7 +51,7 @@ class ALG_Admin {
 
         wp_enqueue_script(
             'axios',
-            'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js',
+            ALG_PLUGIN_URL . 'assets/js/axios.min.js',
             array(),
             '0.21.1',
             true
