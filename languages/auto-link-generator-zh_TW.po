@@ -370,3 +370,11 @@ msgstr "設定"
 #: includes/class-alg-admin.php:84
 msgid "OK"
 msgstr "確定"
+
+#: auto-link-generator.php:67
+msgid "Documentation"
+msgstr "文檔"
+
+#: auto-link-generator.php:68
+msgid "Support"
+msgstr "支援"

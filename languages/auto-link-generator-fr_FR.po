@@ -362,7 +362,7 @@ msgstr "Une erreur s'est produite lors de la suppression de l'article exclu : "
 
 #: includes/class-alg-admin.php:83
 msgid "Confirm Action"
-msgstr "Confirmer l’action"
+msgstr "Confirmer l'action"
 
 #: auto-link-generator.php:61
 msgid "Settings"
@@ -371,3 +371,11 @@ msgstr "Paramètres"
 #: includes/class-alg-admin.php:84
 msgid "OK"
 msgstr "OK"
+
+#: auto-link-generator.php:67
+msgid "Documentation"
+msgstr "Documentation"
+
+#: auto-link-generator.php:68
+msgid "Support"
+msgstr "Support"

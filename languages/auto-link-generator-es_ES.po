@@ -371,3 +371,11 @@ msgstr "Configuración"
 #: includes/class-alg-admin.php:84
 msgid "OK"
 msgstr "Aceptar"
+
+#: auto-link-generator.php:67
+msgid "Documentation"
+msgstr "Documentación"
+
+#: auto-link-generator.php:68
+msgid "Support"
+msgstr "Soporte"

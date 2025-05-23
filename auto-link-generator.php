@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Auto Link Generator
-Plugin URI: https://github.com/procket-org/auto-link-generator
+Plugin URI: https://procket-org.github.io/auto-link-generator/
 Description: Automatically generate internal links based on keywords and tags, with admin panel support
 Version: 2.0
 Author: tony
@@ -63,6 +63,16 @@ function alg_add_settings_link($links) {
     return $links;
 }
 add_filter('plugin_action_links_' . ALG_PLUGIN_BASENAME, 'alg_add_settings_link');
+
+// Add documentation and support links to plugins page
+function alg_add_plugin_meta_links($links, $file) {
+    if ($file == ALG_PLUGIN_BASENAME) {
+        $links[] = '<a href="https://github.com/procket-org/auto-link-generator/blob/main/README.md" target="_blank">' . __('Documentation', 'auto-link-generator') . '</a>';
+        $links[] = '<a href="https://github.com/procket-org/auto-link-generator/issues" target="_blank">' . __('Support', 'auto-link-generator') . '</a>';
+    }
+    return $links;
+}
+add_filter('plugin_row_meta', 'alg_add_plugin_meta_links', 10, 2);
 
 function alg_enqueue_admin_scripts() {
     // SweetAlert2 dependencies

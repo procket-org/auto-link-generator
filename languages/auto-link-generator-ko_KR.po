@@ -371,3 +371,11 @@ msgstr "설정"
 #: includes/class-alg-admin.php:84
 msgid "OK"
 msgstr "확인"
+
+#: auto-link-generator.php:67
+msgid "Documentation"
+msgstr "문서"
+
+#: auto-link-generator.php:68
+msgid "Support"
+msgstr "지원"

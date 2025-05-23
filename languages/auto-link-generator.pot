@@ -2,14 +2,14 @@
 # This file is distributed under the GPLv2.
 msgid ""
 msgstr ""
-"Project-Id-Version: Auto Link Generator 3.0\n"
+"Project-Id-Version: Auto Link Generator 2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/auto-link-generator\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2025-05-18T18:30:51+08:00\n"
+"POT-Creation-Date: 2025-05-23T22:33:21+08:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: auto-link-generator\n"
@@ -20,9 +20,8 @@ msgid "Auto Link Generator"
 msgstr ""
 
 #. Plugin URI of the plugin
-#. Author URI of the plugin
 #: auto-link-generator.php
-msgid "https://github.com/procket-org"
+msgid "https://procket-org.github.io/auto-link-generator/"
 msgstr ""
 
 #. Description of the plugin
@@ -35,8 +34,21 @@ msgstr ""
 msgid "tony"
 msgstr ""
 
+#. Author URI of the plugin
+#: auto-link-generator.php
+msgid "https://github.com/procket-org"
+msgstr ""
+
 #: auto-link-generator.php:61
 msgid "Settings"
+msgstr ""
+
+#: auto-link-generator.php:70
+msgid "Documentation"
+msgstr ""
+
+#: auto-link-generator.php:71
+msgid "Support"
 msgstr ""
 
 #: includes/class-alg-admin.php:26
@@ -57,7 +69,7 @@ msgid "OK"
 msgstr ""
 
 #: includes/class-alg-admin.php:85
-#: includes/class-alg-admin.php:342
+#: includes/class-alg-admin.php:345
 msgid "Cancel"
 msgstr ""
 
@@ -112,7 +124,7 @@ msgid "Post search failed"
 msgstr ""
 
 #: includes/class-alg-admin.php:98
-#: includes/class-alg-api.php:531
+#: includes/class-alg-api.php:535
 msgid "Failed to exclude post"
 msgstr ""
 
@@ -185,7 +197,7 @@ msgid "Excluded Posts List"
 msgstr ""
 
 #: includes/class-alg-admin.php:189
-#: includes/class-alg-admin.php:292
+#: includes/class-alg-admin.php:295
 msgid "items/page"
 msgstr ""
 
@@ -210,12 +222,12 @@ msgid "Remove"
 msgstr ""
 
 #: includes/class-alg-admin.php:227
-#: includes/class-alg-admin.php:361
+#: includes/class-alg-admin.php:364
 msgid "Previous"
 msgstr ""
 
 #: includes/class-alg-admin.php:233
-#: includes/class-alg-admin.php:367
+#: includes/class-alg-admin.php:370
 msgid "Next"
 msgstr ""
 
@@ -224,12 +236,12 @@ msgid "Keyword Management"
 msgstr ""
 
 #: includes/class-alg-admin.php:250
-#: includes/class-alg-admin.php:305
+#: includes/class-alg-admin.php:308
 msgid "Keyword"
 msgstr ""
 
 #: includes/class-alg-admin.php:254
-#: includes/class-alg-admin.php:306
+#: includes/class-alg-admin.php:309
 msgid "Link URL"
 msgstr ""
 
@@ -245,121 +257,121 @@ msgstr ""
 msgid "Keyword List"
 msgstr ""
 
-#: includes/class-alg-admin.php:271
+#: includes/class-alg-admin.php:272
 msgid "Search keywords or links"
 msgstr ""
 
-#: includes/class-alg-admin.php:273
+#: includes/class-alg-admin.php:276
 msgid "Search"
 msgstr ""
 
-#: includes/class-alg-admin.php:281
+#: includes/class-alg-admin.php:284
 msgid "Bulk Actions"
 msgstr ""
 
-#: includes/class-alg-admin.php:282
-#: includes/class-alg-admin.php:350
+#: includes/class-alg-admin.php:285
+#: includes/class-alg-admin.php:353
 msgid "Delete"
 msgstr ""
 
-#: includes/class-alg-admin.php:285
+#: includes/class-alg-admin.php:288
 msgid "Apply"
 msgstr ""
 
-#: includes/class-alg-admin.php:307
+#: includes/class-alg-admin.php:310
 msgid "Creation Time"
 msgstr ""
 
-#: includes/class-alg-admin.php:308
+#: includes/class-alg-admin.php:311
 msgid "Actions"
 msgstr ""
 
-#: includes/class-alg-admin.php:313
+#: includes/class-alg-admin.php:316
 msgid "No keywords found"
 msgstr ""
 
-#: includes/class-alg-admin.php:339
+#: includes/class-alg-admin.php:342
 msgid "Save"
 msgstr ""
 
-#: includes/class-alg-admin.php:347
+#: includes/class-alg-admin.php:350
 msgid "Edit"
 msgstr ""
 
-#: includes/class-alg-api.php:164
+#: includes/class-alg-api.php:168
 msgid "Settings saved"
 msgstr ""
 
-#: includes/class-alg-api.php:170
+#: includes/class-alg-api.php:174
 msgid "Failed to save settings"
 msgstr ""
 
-#: includes/class-alg-api.php:176
+#: includes/class-alg-api.php:180
 msgid "Error occurred while saving settings: "
 msgstr ""
 
-#: includes/class-alg-api.php:223
+#: includes/class-alg-api.php:227
 msgid "Keyword added successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:252
+#: includes/class-alg-api.php:256
 msgid "Keyword updated successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:271
+#: includes/class-alg-api.php:275
 msgid "Failed to delete keyword"
 msgstr ""
 
-#: includes/class-alg-api.php:278
+#: includes/class-alg-api.php:282
 msgid "Keyword deleted successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:294
+#: includes/class-alg-api.php:298
 msgid "Invalid keyword IDs"
 msgstr ""
 
-#: includes/class-alg-api.php:305
+#: includes/class-alg-api.php:309
 msgid "Failed to delete keywords"
 msgstr ""
 
-#: includes/class-alg-api.php:312
+#: includes/class-alg-api.php:316
 msgid "Keywords deleted successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:401
+#: includes/class-alg-api.php:405
 msgid "Error occurred while getting excluded posts: "
 msgstr ""
 
-#: includes/class-alg-api.php:459
+#: includes/class-alg-api.php:463
 msgid "Invalid post"
 msgstr ""
 
-#: includes/class-alg-api.php:489
+#: includes/class-alg-api.php:493
 msgid "Post is already excluded"
 msgstr ""
 
-#: includes/class-alg-api.php:525
+#: includes/class-alg-api.php:529
 msgid "Post excluded successfully"
 msgstr ""
 
-#: includes/class-alg-api.php:537
+#: includes/class-alg-api.php:541
 msgid "Error occurred while excluding post: "
 msgstr ""
 
-#: includes/class-alg-api.php:579
+#: includes/class-alg-api.php:583
 msgid "Post removed from exclusion list"
 msgstr ""
 
-#: includes/class-alg-api.php:586
+#: includes/class-alg-api.php:590
 msgid "Failed to remove post from exclusion list"
 msgstr ""
 
-#: includes/class-alg-api.php:592
+#: includes/class-alg-api.php:596
 msgid "Error occurred while removing excluded post: "
 msgstr ""
 
 #. translators: %s: the post tag name
-#: includes/class-alg-content-processor.php:153
+#: includes/class-alg-content-processor.php:156
 #, php-format
 msgid "View all posts tagged \"%s\""
 msgstr ""
